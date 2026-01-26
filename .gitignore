@@ -147,4 +147,4 @@ wikipedia_documents.json
 # Airflow and project-specific outputs
 logs/
 .env
-mk_news_*.json
+result/

@@ -65,19 +65,28 @@ def extract_article_content(url):
         print(f"본문 크롤링 에러 ({url}): {e}")
         return ""
 
-def save_to_json(data, filename=None):
+def save_to_json(data, filename=None, output_dir=None):
     """데이터를 JSON 파일로 저장"""
     if not filename:
         # 파일명이 없으면 현재 시간을 기준으로 생성 (예: news_20260122_2345.json)
         timestamp = datetime.now().strftime("%Y%m%d_%H%M")
         filename = f"mk_news_{timestamp}.json"
 
-    with open(filename, 'w', encoding='utf-8') as f:
+    # 저장 경로 설정 (절대 경로 사용)
+    base_dir = "/opt/airflow"
+    output_dir = os.path.join(base_dir, "result/airflow")
+    
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+        
+    full_path = os.path.abspath(os.path.join(output_dir, filename))
+
+    with open(full_path, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
     
-    print(f"성공: {len(data)}건의 기사가 {filename}에 저장되었습니다.")
+    print(f"성공: {len(data)}건의 기사가 {full_path}에 저장되었습니다.")
 
-def run_etl():
+def run_etl(output_dir=None):
     """전체 ETL 프로세스 실행"""
     print("1. RSS 기사 목록 수집 중...")
     articles = get_rss_article_list(RSS_URL)
