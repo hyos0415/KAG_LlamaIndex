@@ -28,7 +28,8 @@ def get_rss_article_list(rss_url):
             articles.append({
                 "id": item.find('no').text if item.find('no') else "N/A",
                 "title": item.find('title').text if item.find('title') else "제목 없음",
-                "url": item.find('link').text if item.find('link') else ""
+                "url": item.find('link').text if item.find('link') else "",
+                "pub_date": item.find('pubDate').text if item.find('pubDate') else ""
             })
         return articles
     except Exception as e:
@@ -51,9 +52,13 @@ def extract_article_content(url):
         if not content_container:
             return ""
 
-        # p 태그 내 텍스트 추출 및 병합
-        p_tags = content_container.find_all('p')
-        full_text = "\n".join([p.get_text(strip=True) for p in p_tags if p.get_text(strip=True)])
+        # 불필요한 요소 제거 (광고, 버튼, 피겨 캡션 등)
+        for detail in content_container.select('.ad-slot, .btn, figcaption, figure, .thumb_area'):
+            detail.decompose()
+
+        # 텍스트 추출: strip=True와 separator='\n'을 사용해 줄바꿈 유지 및 공백 제거
+        # <p> 태그가 없더라도 텍스트 노드들을 줄바꿈으로 구분해 가져옴
+        full_text = content_container.get_text(separator='\n', strip=True)
         return full_text
 
     except Exception as e:
