@@ -1,0 +1,9 @@
+services:
+  news-etl:
+    build: .
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+      - LANG=C.UTF-8
+      - LC_ALL=C.UTF-8

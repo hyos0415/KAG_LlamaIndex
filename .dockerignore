@@ -1,0 +1,9 @@
+.git
+__pycache__
+*.pyc
+.venv
+.uv
+.python-version
+mk_news_*.json
+*.log
+.DS_Store
