@@ -148,3 +148,8 @@ wikipedia_documents.json
 logs/
 .env
 result/
+news_arena.db*
+chroma_db/
+storage_claude/
+airflow.cfg
+airflow-webserver.pid
