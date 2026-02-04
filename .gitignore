@@ -158,3 +158,7 @@ airflow-webserver.pid
 # test module
 main_query.py
 
+# RAG Evaluation and Migration
+rag_eval_results.csv
+migrate_to_es.py
+elasticsearch_data/
