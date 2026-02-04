@@ -16,23 +16,22 @@ default_args = {
 with DAG(
     'mk_news_full_pipeline',
     default_args=default_args,
-    description='매일경제 뉴스 수집 및 고도화(PGI) ETL 파이프라인',
+    description='매일경제 뉴스 수집 및 모듈형 지능형 분석 ETL',
     schedule_interval=timedelta(hours=1),
     catchup=False,
-    tags=['news', 'pgi', 'etl'],
+    tags=['news', 'ai', 'etl'],
 ) as dag:
 
     # 1. 뉴스 추출 (Extract)
     t1 = BashOperator(
         task_id='extract_news',
-        bash_command='python /opt/airflow/ETL_expr/news_extract.py',
+        bash_command='export PYTHONPATH=$PYTHONPATH:/opt/airflow && python /opt/airflow/app/etl/extractor.py',
     )
 
-    # 2. 뉴스 변환 및 지식 그래프 적재 (Transform & Load)
-    # LlamaIndex_PGI 로직 실행
+    # 2. 뉴스 변환 및 하이브리드 적재 (Transform & Load)
     t2 = BashOperator(
         task_id='transform_load_news',
-        bash_command='export PYTHONPATH=$PYTHONPATH:/opt/airflow/LlamaIndex_PGI && python /opt/airflow/LlamaIndex_PGI/app/builder/news_builder.py',
+        bash_command='export PYTHONPATH=$PYTHONPATH:/opt/airflow && python /opt/airflow/app/etl/enricher.py',
         env={
             'ANTHROPIC_API_KEY': os.getenv('ANTHROPIC_API_KEY'),
             'OPENAI_API_KEY': os.getenv('OPENAI_API_KEY'),
