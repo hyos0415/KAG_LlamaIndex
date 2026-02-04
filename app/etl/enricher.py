@@ -108,13 +108,20 @@ class NewsEnricher:
                 )
                 documents.append(doc)
         
-        # 3. Vector DB 적재 (ChromaDB)
+        # 3. Vector DB 적재 (Elasticsearch)
         if documents:
-            print(f"🚀 {len(documents)}개의 문서를 벡터 DB에 적재합니다...")
+            print(f"🚀 {len(documents)}개의 문서를 Elasticsearch에 적재합니다...")
             nodes = self.node_parser.get_nodes_from_documents(documents)
-            storage_context = self.storage_manager.get_storage_context()
-            VectorStoreIndex(nodes, storage_context=storage_context)
-            print("✅ Vector DB 적재 완료.")
+            
+            # Elasticsearch에 적재
+            es_storage_context = self.storage_manager.get_storage_context(store_type="elasticsearch")
+            VectorStoreIndex(nodes, storage_context=es_storage_context)
+            
+            # (옵션) 기존 사용자를 위해 ChromaDB에도 병행 유지하고 싶다면 아래 주석 해제 가능
+            # chroma_storage_context = self.storage_manager.get_storage_context(store_type="chroma")
+            # VectorStoreIndex(nodes, storage_context=chroma_storage_context)
+            
+            print("✅ Elasticsearch 적재 완료.")
         
         return documents
 
