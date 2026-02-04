@@ -43,9 +43,10 @@ docker-compose up -d
 DAG 리스트에서 `mk_news_full_pipeline`을 활성화(Unpause)하면 한 시간마다 인공지능이 뉴스를 분석하고 저장하기 시작합니다.
 
 ## 📂 폴더 구조
-- **`LlamaIndex_PGI/`**: AI 분석 및 하이브리드 저장 핵심 로직 (`builder`, `schema`, `solver`)
-- **`ETL_expr/`**: 뉴스 원문 수집 엔진
-- **`dags/`**: 통합 파이프라인 정의서
+- **`app/etl/`**: 데이터 수집, LLM 분석(카테고리/감성/요약), 하이브리드 자동 적재
+- **`app/rag/`**: 하이브리드 리트리버(Vector + BM25) 및 쿼리 디컴포지션 엔진
+- **`app/graph/`**: Just-in-Time 지식 그래프 생성 및 그래프 추론 모듈
+- **`dags/`**: 통합 파이프라인(Full Pipeline) 정의서
 - **`news_arena.db`**: 구조화된 메타데이터 저장소 (SQLite)
 - **`chroma_db/`**: 벡터 데이터 저장소
 
