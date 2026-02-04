@@ -153,3 +153,8 @@ chroma_db/
 storage_claude/
 airflow.cfg
 airflow-webserver.pid
+
+
+# test module
+main_query.py
+
