@@ -1,12 +1,13 @@
 import asyncio
 from typing import List, Optional
-from llama_index.core import Settings, StorageContext, VectorStoreIndex, QueryBundle
+from llama_index.core import Settings, VectorStoreIndex, QueryBundle
 from llama_index.core.retrievers import BaseRetriever, VectorIndexRetriever
 from llama_index.retrievers.bm25 import BM25Retriever
 from llama_index.core.postprocessor import LLMRerank
 from llama_index.core.query_engine import RetrieverQueryEngine
 from llama_index.llms.anthropic import Anthropic
 from llama_index.embeddings.openai import OpenAIEmbedding
+from llama_index.core.schema import NodeWithScore, TextNode
 
 from app.etl.storage import StorageManager
 from app.graph.jit_builder import JITGraphAnalyzer
@@ -31,24 +32,47 @@ class HybridRetriever(BaseRetriever):
         return list(all_nodes_dict.values())
 
 class NewsRAGSolver:
-    def __init__(self, model_name: str = "claude-sonnet-4-0", db_url: Optional[str] = None, chroma_path: Optional[str] = None):
+    def __init__(self, model_name: str = "claude-sonnet-4-0", db_url: Optional[str] = None):
         self.llm = Anthropic(model=model_name, timeout=300.0)
         self.embed_model = OpenAIEmbedding(model="text-embedding-3-small")
         
         Settings.llm = self.llm
         Settings.embed_model = self.embed_model
         
-        self.storage_manager = StorageManager(db_url=db_url, chroma_path=chroma_path)
+        self.storage_manager = StorageManager(db_url=db_url)
         self.graph_analyzer = JITGraphAnalyzer(model_name=model_name)
         self.decomposer = QueryDecomposer(model_name=model_name)
         
+    async def retrieve_similar_nodes(self, query_str: str, top_k: int = 5) -> List[NodeWithScore]:
+        """
+        사용자 기사와 관련된 유사 노드들을 검색하여 반환합니다.
+        """
+        # Elasticsearch 인덱스 로드
+        vector_index = VectorStoreIndex.from_vector_store(
+            self.storage_manager.get_llama_es_store()
+        )
+        
+        # 하이브리드 리트리버 설정
+        retriever = vector_index.as_retriever(
+            similarity_top_k=top_k,
+            vector_store_query_mode="hybrid",
+            alpha=0.5
+        )
+        
+        # 검색 및 랭킹
+        retrieved_nodes = retriever.retrieve(query_str)
+        reranker = LLMRerank(choice_batch_size=5, top_n=top_k // 2 if top_k > 2 else top_k, llm=self.llm)
+        final_nodes = reranker.postprocess_nodes(retrieved_nodes, query_bundle=QueryBundle(query_str))
+        
+        return final_nodes
+
     async def query(self, query_str: str, top_k: int = 4, use_graph: bool = True):
         """
         Elasticsearch 기반 하이브리드 검색 후 지식 그래프 딥다이브 분석 수행
         """
         # 1. 인덱스 로드 (Elasticsearch)
         vector_index = VectorStoreIndex.from_vector_store(
-            self.storage_manager.es_store
+            self.storage_manager.get_llama_es_store()
         )
         
         # 2. Elasticsearch 하이브리드 리트리버 설정
