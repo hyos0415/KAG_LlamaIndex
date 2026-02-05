@@ -75,8 +75,13 @@ class KnowledgeGraphManager:
             depth_res = graph_store.query(depth_query)
             metrics["depth"] = min(100, int(depth_res[0]['paths'] * 5)) if depth_res else 0
 
-            # 4. 독창성 (Originality): 최신 지식 기여도 (최근 추가된 데이터 비중 - 여기서는 랜덤 샘플로 대체 가능하나 논리적 구현)
-            metrics["originality"] = 85 # 기획된 고정값 또는 간단한 통계
+            # 4. 독창성 (Originality): 기존 지식 대비 신규 정보의 가치 평가 (LLM)
+            originality_prompt = (
+                "제공된 [결과]가 일반적인 상식이나 기존 보도 내용을 넘어 얼마나 고유하고 구체적인 새로운 정보(신규 인물, 특정 수치, 미시적 사건 등)를 담고 있는지 0~100점으로 평가하세요.\n"
+                "숫자만 출력하세요.\n"
+                f"결과: {results}"
+            )
+            metrics["originality"] = int(str(self.llm.complete(originality_prompt)).strip() or 0)
 
             # 5. 정보 밀도 (Density): 결과 내 관계 수 / 노드 수
             if results and isinstance(results, list):
@@ -189,16 +194,6 @@ class KnowledgeGraphManager:
         validation_res = self.llm.complete(fact_check_prompt)
         
         # 5. 육각형 지표 산출
-        metrics = await self.calculate_hexagonal_metrics(user_article_text, user_triplets)
-        
-        return {
-            "validation_report": validation_res,
-            "existing_knowledge": existing_knowledge,
-            "user_triplets": user_triplets,
-            "metrics": metrics
-        }
-        
-        # 4. 육각형 지표 산출
         metrics = await self.calculate_hexagonal_metrics(user_article_text, user_triplets)
         
         return {
