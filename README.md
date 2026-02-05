@@ -20,41 +20,22 @@
 graph TD
     subgraph Row1 [Knowledge Accumulation]
         direction LR
-        subgraph "1. ETL Pipeline"
-            direction LR
-            A[News Source: RSS] --> B[Airflow ETL]
-            B --> C[(PostgreSQL: Metadata)]
-        end
-
-        subgraph "2. Search Indexing"
-            direction LR
-            C -- "Semantic Parsing" --> D[(Elasticsearch: BM25)]
-            C -- "Embedding" --> E[(ChromaDB: Vector)]
-        end
+        A[News Source: RSS] --> B[Airflow ETL] --> C[(PostgreSQL: Metadata)]
+        C -- "Indexing" --> D[(Elasticsearch)]
+        C -- "Indexing" --> E[(ChromaDB)]
     end
 
     subgraph Row2 [Intelligent Analysis]
         direction LR
-        subgraph "3. Hybrid Search Engine (RAG)"
-            direction LR
-            F[User Draft/Query] --> G[Hybrid Retriever]
-            G --> D
-            G --> E
-            D & E --> H[Retrieved Documents]
-        end
-
-        subgraph "4. Graph Analysis Engine (KAG)"
-            direction LR
-            H -- "Just-In-Time extraction" --> I[LlamaIndex PGI Builder]
-            F -- "Contextual Isolation" --> I
-            I --> J[(Neo4j: Property Graph)]
-            J --> K[Hexagonal Analysis 2.0]
-            K --> L[Fact-Check & Insight Report]
-        end
+        F[User Draft] --> G[Hybrid Search RAG]
+        G --> H[Retrieved Documents]
+        H --> I[Graph Extraction KAG]
+        I --> J[(Neo4j)]
+        J --> K[Final Insight Report]
     end
 
-    %% Flow
-    Row1 --> Row2
+    %% Flow connection
+    Row1 ==> Row2
 ```
 
 ---
