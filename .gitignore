@@ -162,3 +162,5 @@ main_query.py
 rag_eval_results.csv
 migrate_to_es.py
 elasticsearch_data/
+neo4j_data/
+*.log
