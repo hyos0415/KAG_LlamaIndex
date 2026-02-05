@@ -48,12 +48,26 @@ async def main():
     # 질문 예시: "기사에 언급된 주요 기업들과 그들의 관계를 분석해줘."
     query = "뉴스 기사들에 공통적으로 등장하거나 연관된 주요 인물과 기업들의 관계망을 설명해줘."
     
-    response = await kg_manager.analyze_with_cypher(query)
+    result = await kg_manager.analyze_with_cypher(query)
     
     print("\n" + "="*50)
-    print("📊 Neo4j 기반 그래프 분석 결과")
+    print("📊 [육각형 분석 2.0] 그래프 분석 결과 보고서")
     print("="*50)
-    print(response)
+    
+    if isinstance(result, dict):
+        print(f"📄 분석 답변:\n{result['answer']}")
+        print("\n" + "-"*50)
+        print("🕸️ 실행된 Cypher 쿼리:")
+        print(f"{result['cypher']}")
+        print("\n" + "-"*50)
+        print("📈 정량 분석 지표 (Hexagonal Metrics):")
+        m = result['metrics']
+        for key, val in m.items():
+            bar = "█" * (val // 5)
+            print(f"{key.capitalize():<15} | {val:>3} pts {bar}")
+    else:
+        print(result)
+        
     print("="*50)
 
 if __name__ == "__main__":
