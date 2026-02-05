@@ -5,24 +5,43 @@
 
 ---
 
+### 🚀 프로젝트 3줄 요약 (Key Highlights)
+*   **ETL**: LLM 기반 메타데이터 분석 및 추출 자동화 파이프라인 구축
+*   **RAG**: 하이브리드 검색 및 RRF 알고리즘 도입을 통한 **Context Precision 1.0** 달성 (PoC 데이터셋 기준)
+*   **KAG**: 지식 그래프 기반 트리플렛 대조를 통한 논리적 사실 검증 및 할루시네이션 제어
+
+---
+
 ## 🏗️ 시스템 아키텍처 (System Architecture)
 
 전체 시스템은 **"데이터 수집-축적-검색-관계 분석"**의 4단계 엔드투엔드 파이프라인으로 구성되어 있습니다.
 
 ```mermaid
 graph TD
-    A[News Source: RSS] --> B[Airflow ETL]
-    B --> C[(PostgreSQL: Metadata)]
-    C --> D[Hybrid Search Engine]
-    D --> E[Elasticsearch: Sparse/BM25]
-    D --> F[ChromaDB: Dense/Vector]
-    
-    G[User Draft/Query] -- "1. Search Query" --> D
-    D -- "2. Retrieve Context" --> C
-    G -- "3. Deep Analysis" --> H[Neo4j: Property Graph]
-    
-    H --> I[Hexagonal Analysis 2.0]
-    I --> J[Fact-Check & Insight Report]
+    subgraph "1. ETL Pipeline"
+        A[News Source: RSS] --> B[Airflow ETL]
+        B --> C[(PostgreSQL: Metadata)]
+    end
+
+    subgraph "2. Search Indexing"
+        C -- "Semantic Parsing" --> D[(Elasticsearch: BM25)]
+        C -- "Embedding" --> E[(ChromaDB: Vector)]
+    end
+
+    subgraph "3. Hybrid Search Engine (RAG)"
+        F[User Draft/Query] --> G[Hybrid Retriever]
+        G --> D
+        G --> E
+        D & E --> H[Retrieved Documents]
+    end
+
+    subgraph "4. Graph Analysis Engine (KAG)"
+        H -- "Just-In-Time extraction" --> I[LlamaIndex PGI Builder]
+        F -- "Contextual Isolation" --> I
+        I --> J[(Neo4j: Property Graph)]
+        J --> K[Hexagonal Analysis 2.0]
+        K --> L[Fact-Check & Insight Report]
+    end
 ```
 
 ---
@@ -58,13 +77,13 @@ graph TD
 
 ---
 
-## � 성능 평가 결과 (Evaluation)
+## 📊 핵심 성과 (Key Results)
 
-`RAGAS` 지표를 통해 하이브리드 전략의 우수성을 객관적으로 입증했습니다.
+`RAGAS` 지표 및 커스텀 검증 시나리오를 통해 시스템의 우수성을 객관적으로 입증했습니다.
 
-- **Context Precision**: **1.0** (필요한 정보가 항상 상위에 노출됨)
-- **Faithfulness**: LLM 기반 사실 충실도 검증 통과
-- **Fact-Check Accuracy**: 실제 사례(예: 강영권 회장 선고 형량 대조)에서 **Contradiction** 탐지 성공
+*   **ETL**: LLM 기반 메타데이터 분석 및 추출 자동화 파이프라인 구축
+*   **RAG**: 하이브리드 검색 및 RRF 알고리즘 도입을 통한 **Context Precision 1.0** 달성 (PoC 데이터셋 기준)
+*   **KAG**: 지식 그래프 기반 트리플렛 대조를 통한 논리적 사실 검증 및 할루시네이션 제어
 
 ---
 
@@ -93,4 +112,3 @@ PYTHONPATH=. uv run python3 app/rag/evaluator.py
 - **`app/graph/`**: JIT 지식 그래프 빌더 및 육각형 분석 엔진
 - **`dags/`**: Airflow 파이프라인 오케스트레이션 정의
 - **`technical_report.md`**: 상세 기술 고찰 및 트러블슈팅 이력
-

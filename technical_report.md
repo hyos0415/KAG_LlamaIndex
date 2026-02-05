@@ -4,23 +4,42 @@
 
 ---
 
+### 🚀 프로젝트 3줄 요약 (Key Highlights)
+*   **ETL**: LLM 기반 메타데이터 분석 및 추출 자동화 파이프라인 구축
+*   **RAG**: 하이브리드 검색 및 RRF 알고리즘 도입을 통한 **Context Precision 1.0** 달성 (PoC 데이터셋 기준)
+*   **KAG**: 지식 그래프 기반 트리플렛 대조를 통한 논리적 사실 검증 및 할루시네이션 제어
+
+---
+
 ## 🏗️ 시스템 아키텍처 개요
 전체 시스템은 **"데이터 수집-축적-검색-관계 분석"**의 4단계 파이프라인으로 구성되어 있습니다.
 
 ```mermaid
 graph TD
-    A[News Source] --> B[Airflow ETL]
-    B --> C[(PostgreSQL: Raw)]
-    C --> D[Hybrid Search Engine]
-    D --> E[Elasticsearch: BM25]
-    D --> F[ChromaDB: Vector]
-    
-    G[User Draft] -- "1. Search Query" --> D
-    D -- "2. Retrieve Context" --> C
-    G -- "3. Deep Analysis" --> H[Neo4j: Property Graph]
-    
-    H --> I[Hexagonal Analysis 2.0]
-    I --> J[Fact-Check Report]
+    subgraph "1. ETL Pipeline"
+        A[News Source: RSS] --> B[Airflow ETL]
+        B --> C[(PostgreSQL: Raw)]
+    end
+
+    subgraph "2. Search Indexing"
+        C -- "Semantic Parsing" --> D[(Elasticsearch: BM25)]
+        C -- "Embedding" --> E[(ChromaDB: Vector)]
+    end
+
+    subgraph "3. Hybrid Search Engine (RAG)"
+        F[User Draft/Query] --> G[Hybrid Retriever]
+        G --> D
+        G --> E
+        D & E --> H[Retrieved Documents]
+    end
+
+    subgraph "4. Graph Analysis Engine (KAG)"
+        H -- "Just-In-Time extraction" --> I[LlamaIndex PGI Builder]
+        F -- "Contextual Isolation" --> I
+        I --> J[(Neo4j: Property Graph)]
+        J --> K[Hexagonal Analysis 2.0]
+        K --> L[Fact-Check & Insight Report]
+    end
 ```
 
 ---
