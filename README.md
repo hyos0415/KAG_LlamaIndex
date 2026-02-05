@@ -17,31 +17,44 @@
 전체 시스템은 **"데이터 수집-축적-검색-관계 분석"**의 4단계 엔드투엔드 파이프라인으로 구성되어 있습니다.
 
 ```mermaid
-graph LR
-    subgraph "1. ETL Pipeline"
-        A[News Source: RSS] --> B[Airflow ETL]
-        B --> C[(PostgreSQL: Metadata)]
+graph TD
+    subgraph Row1 [Knowledge Accumulation]
+        direction LR
+        subgraph "1. ETL Pipeline"
+            direction LR
+            A[News Source: RSS] --> B[Airflow ETL]
+            B --> C[(PostgreSQL: Metadata)]
+        end
+
+        subgraph "2. Search Indexing"
+            direction LR
+            C -- "Semantic Parsing" --> D[(Elasticsearch: BM25)]
+            C -- "Embedding" --> E[(ChromaDB: Vector)]
+        end
     end
 
-    subgraph "2. Search Indexing"
-        C -- "Semantic Parsing" --> D[(Elasticsearch: BM25)]
-        C -- "Embedding" --> E[(ChromaDB: Vector)]
+    subgraph Row2 [Intelligent Analysis]
+        direction LR
+        subgraph "3. Hybrid Search Engine (RAG)"
+            direction LR
+            F[User Draft/Query] --> G[Hybrid Retriever]
+            G --> D
+            G --> E
+            D & E --> H[Retrieved Documents]
+        end
+
+        subgraph "4. Graph Analysis Engine (KAG)"
+            direction LR
+            H -- "Just-In-Time extraction" --> I[LlamaIndex PGI Builder]
+            F -- "Contextual Isolation" --> I
+            I --> J[(Neo4j: Property Graph)]
+            J --> K[Hexagonal Analysis 2.0]
+            K --> L[Fact-Check & Insight Report]
+        end
     end
 
-    subgraph "3. Hybrid Search Engine (RAG)"
-        F[User Draft/Query] --> G[Hybrid Retriever]
-        G --> D
-        G --> E
-        D & E --> H[Retrieved Documents]
-    end
-
-    subgraph "4. Graph Analysis Engine (KAG)"
-        H -- "Just-In-Time extraction" --> I[LlamaIndex PGI Builder]
-        F -- "Contextual Isolation" --> I
-        I --> J[(Neo4j: Property Graph)]
-        J --> K[Hexagonal Analysis 2.0]
-        K --> L[Fact-Check & Insight Report]
-    end
+    %% Flow
+    Row1 --> Row2
 ```
 
 ---
