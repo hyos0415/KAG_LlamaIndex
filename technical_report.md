@@ -15,7 +15,7 @@
 전체 시스템은 **"데이터 수집-축적-검색-관계 분석"**의 4단계 파이프라인으로 구성되어 있습니다.
 
 ```mermaid
-graph TD
+graph LR
     subgraph "1. ETL Pipeline"
         A[News Source: RSS] --> B[Airflow ETL]
         B --> C[(PostgreSQL: Raw)]
