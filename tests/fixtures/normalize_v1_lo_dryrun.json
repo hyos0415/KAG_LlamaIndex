@@ -1,6 +1,7 @@
 {
   "graph_path": "experiments/v1/property_graph_store.json",
-  "entity_v2a": {
+  "entity_v2a_lo": {
+    "mode": "lo",
     "total_entities": 925,
     "merge_pairs_found": 5,
     "canonical_short_forms": 5,

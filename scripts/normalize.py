@@ -1,21 +1,27 @@
 """
 정규화 규칙 구현 (§8 미정 1·2 확정, docs/CONTEXT.md §6 "정규화 작업 내용" 참고).
 
-엔티티 병합 규칙 (v2a/v2c 대상) — 쌍 단위만, 전이적 클러스터링 금지:
-  1. 쌍 단위만 적용
-  2. 짧은 쪽 길이 3자 이상
-  3. 차이 부분이 알려진 수식어(직함/조사)와 정확히 일치
-  4. 차이 부분 길이 5자 이하
-  5. 차이 부분 또는 긴 쪽 문자열에 B유형(사건) 키워드 포함 시 제외
+엔티티 병합 — v2a-lo(하한, --mode lo)와 v2a-hi(상한, --mode hi)로 분리 (§6 "v2a 상하한 분할"):
+
+  v2a-lo: 쌍 단위만, 전이적 클러스터링 금지. 오병합 0 목표.
+    1. 쌍 단위만 적용
+    2. 짧은 쪽 길이 3자 이상
+    3. 차이 부분이 알려진 수식어(직함/조사)와 정확히 일치
+    4. 차이 부분 길이 5자 이하
+    5. 차이 부분 또는 긴 쪽 문자열에 B유형(사건) 키워드 포함 시 제외
+
+  v2a-hi: B유형 키워드로 사건 노드만 제외하고 나머지는 substring 기준 전이적
+    클러스터링. 의도적 과다 병합(오탐 포함, 고치지 않음) — 정규화 효과의 상한.
 
 관계 정규화 (v2b/v2c 대상) — 활용형 어미/조사 제거만. 온톨로지 매핑 아님.
 
-이 스크립트는 규칙 함수와 드라이런 리포트만 제공한다. 실제 v2a/v2b/v2c 그래프
-재구축(alias_map/stem_map을 실제 트리플에 적용해 persist)은 이 스크립트 실행만으로는
-하지 않는다 — 승인 후 별도 실행.
+이 스크립트는 규칙 함수와 드라이런 리포트만 제공한다. 실제 v2a-lo/v2a-hi/v2b/v2c
+그래프 재구축(alias_map/stem_map을 실제 트리플에 적용해 persist)은 이 스크립트
+실행만으로는 하지 않는다 — 승인 후 별도 실행.
 
 사용 예 (드라이런, 그래프를 만들지 않고 예상 건수만 출력):
-    python scripts/normalize.py --graph experiments/v1/property_graph_store.json
+    python scripts/normalize.py --graph experiments/v1/property_graph_store.json --mode lo
+    python scripts/normalize.py --graph experiments/v1/property_graph_store.json --mode hi
 """
 
 import argparse
@@ -71,6 +77,56 @@ def find_entity_merge_pairs(entities):
     return sorted(set(pairs))
 
 
+EVENT_KEYWORDS_HI = [
+    "사퇴", "논란", "화재", "원인", "중단", "재고", "사건", "의혹", "확산", "발생", "위생", "인상", "인하",
+    "도입", "추진", "결정", "발표", "개최", "체결", "합병", "매각", "인수", "상승", "하락", "폭등", "폭락",
+    "소송", "기소", "구속", "처벌", "선고", "판결", "조사", "수사", "발령", "지시", "요청", "요구", "촉구",
+    "반발", "항의", "시위", "집회", "회의", "총회", "협상", "계약", "투자", "매입", "확정", "승인", "거부",
+    "반대", "찬성", "지지", "비판", "논쟁", "갈등", "대립", "충돌", "부상", "사망", "피해", "복구", "철회",
+    "재개", "착수", "완료", "발효", "폐지", "시행", "연기", "취소", "종료", "시작",
+]
+
+
+def find_entity_clusters_hi(entities):
+    """의도적 과다 병합(정규화 효과의 상한). substring 전이적 클러스터링.
+    오탐(서울/경찰/경찰청 등)을 그대로 둔다 — 고치지 않는다. §6 "v2a 상하한 분할" 참고.
+    B유형(키워드 포함) 엔티티만 사전 제외하고, 나머지는 전이적으로 묶는다.
+    """
+    def has_event_keyword(s):
+        return any(kw in s for kw in EVENT_KEYWORDS_HI)
+
+    names_all = sorted(set(entities))
+    type_b = [e for e in names_all if has_event_keyword(e) and len(e) > 3]
+    remaining = sorted(set(names_all) - set(type_b))
+
+    parent = {x: x for x in remaining}
+
+    def find(x):
+        while parent[x] != x:
+            parent[x] = parent[parent[x]]
+            x = parent[x]
+        return x
+
+    def union(x, y):
+        rx, ry = find(x), find(y)
+        if rx != ry:
+            parent[rx] = ry
+
+    n = len(remaining)
+    for i in range(n):
+        for j in range(i + 1, n):
+            a, b = remaining[i], remaining[j]
+            if len(a) >= 2 and len(b) >= 2 and (a in b or b in a):
+                union(a, b)
+
+    clusters = {}
+    for x in remaining:
+        clusters.setdefault(find(x), []).append(x)
+    multi_clusters = {r: members for r, members in clusters.items() if len(members) > 1}
+
+    return type_b, multi_clusters
+
+
 def stem_relation_type(t):
     s = t
     changed = True
@@ -105,13 +161,42 @@ def load_graph(path):
     return entities, rel_types
 
 
-def dry_run_report(graph_path):
+def dry_run_report(graph_path, mode="lo"):
     entities, rel_types = load_graph(graph_path)
+    total_entities = len(set(entities))
 
-    # 병합 방향: long_(수식어 붙은 변형) -> short(짧은 canonical 형태)
-    merge_pairs = find_entity_merge_pairs(entities)
-    absorbed_long_forms = set(long_ for _, long_ in merge_pairs)  # 병합되어 사라질 엔티티
-    canonical_short_forms = set(short for short, _ in merge_pairs)
+    if mode == "lo":
+        # 병합 방향: long_(수식어 붙은 변형) -> short(짧은 canonical 형태)
+        merge_pairs = find_entity_merge_pairs(entities)
+        absorbed = set(long_ for _, long_ in merge_pairs)
+        canonical = set(short for short, _ in merge_pairs)
+        entity_report = {
+            "mode": "lo",
+            "total_entities": total_entities,
+            "merge_pairs_found": len(merge_pairs),
+            "canonical_short_forms": len(canonical),
+            "absorbed_long_forms": len(absorbed),
+            "expected_reduction": len(absorbed),
+            "expected_reduction_pct_of_total": round(len(absorbed) / total_entities * 100, 2),
+            "sample_pairs": merge_pairs[:30],
+        }
+    elif mode == "hi":
+        type_b, multi_clusters = find_entity_clusters_hi(entities)
+        entities_in_clusters = sum(len(m) for m in multi_clusters.values())
+        reduction = entities_in_clusters - len(multi_clusters)
+        entity_report = {
+            "mode": "hi",
+            "total_entities": total_entities,
+            "type_b_excluded": len(type_b),
+            "cluster_count": len(multi_clusters),
+            "entities_in_clusters": entities_in_clusters,
+            "expected_reduction": reduction,
+            "expected_reduction_pct_of_total": round(reduction / total_entities * 100, 2),
+            "sample_clusters": [sorted(m, key=len) for m in list(multi_clusters.values())[:15]],
+            "warning": "의도적 과다 병합 — 오탐(예: 서울/경찰/경찰청) 포함, 고치지 않음. 정규화 효과의 상한 측정용.",
+        }
+    else:
+        raise ValueError(f"unknown mode: {mode}")
 
     stem_map = build_relation_stem_map(rel_types)
     unique_types_before = len(set(rel_types))
@@ -119,15 +204,7 @@ def dry_run_report(graph_path):
 
     report = {
         "graph_path": graph_path,
-        "entity_v2a": {
-            "total_entities": len(set(entities)),
-            "merge_pairs_found": len(merge_pairs),
-            "canonical_short_forms": len(canonical_short_forms),
-            "absorbed_long_forms": len(absorbed_long_forms),
-            "expected_reduction": len(absorbed_long_forms),
-            "expected_reduction_pct_of_total": round(len(absorbed_long_forms) / len(set(entities)) * 100, 2),
-            "sample_pairs": merge_pairs[:30],
-        },
+        f"entity_v2a_{mode}": entity_report,
         "relation_v2b": {
             "total_types": unique_types_before,
             "estimated_after_stemming": unique_stems_after,
@@ -141,10 +218,11 @@ def dry_run_report(graph_path):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--graph", required=True, help="property_graph_store.json 경로")
+    parser.add_argument("--mode", choices=["lo", "hi"], default="lo", help="lo=보수 규칙(하한), hi=substring 전이적 클러스터링(상한, 의도적 과다병합)")
     parser.add_argument("--dry-run", action="store_true", default=True, help="기본값. 실제 그래프를 만들지 않고 예상 건수만 출력")
     args = parser.parse_args()
 
-    report = dry_run_report(args.graph)
+    report = dry_run_report(args.graph, mode=args.mode)
     print(json.dumps(report, ensure_ascii=False, indent=2))
 
 

@@ -1,0 +1,14 @@
+{
+  "total_entities": 925,
+  "single_doc_count": 883,
+  "single_doc_ratio": 0.9546,
+  "multi_doc_count": 42,
+  "multi_doc_ratio": 0.0454,
+  "doc_count_distribution": {
+    "1": 883,
+    "2": 30,
+    "3": 6,
+    "4": 4,
+    "5": 2
+  }
+}
