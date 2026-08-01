@@ -1,0 +1,8 @@
+{
+  "call_index": 28,
+  "model": "claude-sonnet-4-5-20250929",
+  "stop_reason": "end_turn",
+  "input_tokens": 785,
+  "output_tokens": 241,
+  "content_text": "Here are the extracted knowledge triplets:\n\n1. (강선우, 받는 의혹, 1억원 공천헌금 수수)\n2. (강선우, 소속, 무소속 의원)\n3. (강선우, 받은 조사 시간, 11시간)\n4. (경찰, 조사 대상, 강선우)\n5. (경찰, 검토 중, 구속영장 신청)\n6. (남모, 직책, 강선우 전 보좌관)\n7. (김경, 직책, 전 서울시의원)\n8. (강선우, 보유, 불체포 특권)\n9. (불체포 특권, 적용 시기, 회기 중)\n10. (경찰, 추궁 대상, 1억원 전후 경위)"
+}

@@ -1,0 +1,8 @@
+{
+  "call_index": 16,
+  "model": "claude-sonnet-4-5-20250929",
+  "stop_reason": "end_turn",
+  "input_tokens": 1297,
+  "output_tokens": 286,
+  "content_text": "Here are the knowledge triplets extracted from the text:\n\n(중국 해외 유학생, 귀국 증가율, 전년 대비 12%)\n(중국, 급성장 분야, AI·로봇 첨단 기술)\n(귀국 유학생, 학위 비율, 석사 80%)\n(중국 청년 실업률, 기록, 16.5%)\n(2~3선 도시 구직자, 증가율, 전년 대비 20%)\n(트럼프 행정부, 실시, 유학생 비자 규제 강화)\n(2026년 졸업 예정 대학생, 추정 수, 1270만명)\n(중국 청년 실업률 최고치, 기록, 21.3% 2023년 6월)\n(중국 국가고시 응시자, 달성, 371만8000명)\n(중국 대학 졸업생, 정점 예상 시기, 2035년)"
+}

@@ -1,0 +1,8 @@
+{
+  "call_index": 56,
+  "model": "claude-sonnet-4-5-20250929",
+  "stop_reason": "end_turn",
+  "input_tokens": 543,
+  "output_tokens": 250,
+  "content_text": "Here are the extracted knowledge triplets:\n\n(프랙시스캐피탈파트너스, 인수, 번개장터)\n(프랙시스캐피탈파트너스, 인수 시기, 2020년)\n(프랙시스캐피탈파트너스, 인수 금액, 1500억원)\n(프랙시스캐피탈파트너스, 매각, 번개장터)\n(번개장터, is, 중고거래플랫폼)\n(번개장터, 매출 증가, 140억원에서 449억원)\n(번개장터, 출발, 퀵캣)\n(네이버, 인수, 번개장터)\n(네이버, 인수 시기, 2013년)\n(프랙시스캐피탈파트너스, 선정, 외국계 IB)"
+}

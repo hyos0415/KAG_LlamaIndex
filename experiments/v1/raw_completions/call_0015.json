@@ -1,0 +1,8 @@
+{
+  "call_index": 15,
+  "model": "claude-sonnet-4-5-20250929",
+  "stop_reason": "end_turn",
+  "input_tokens": 619,
+  "output_tokens": 236,
+  "content_text": "Here are the extracted knowledge triplets:\n\n(파리크라상, 운영, 파리바게트)\n(파리크라상, 운영, 파스쿠찌)\n(파리크라상, 실시, 희망퇴직)\n(희망퇴직, 대상, 과장급 이상 직원)\n(파리크라상, 이전 희망퇴직 실시, 2023년 11월)\n(파리크라상 2024년 매출, 감소, 4%)\n(파리크라상 2024년 매출, 기록, 1조 9307억원)\n(매출 감소, 원인, 고물가)\n(매출 감소, 원인, 내수 경기 둔화)\n(희망퇴직, 목적, 경영 효율화)"
+}

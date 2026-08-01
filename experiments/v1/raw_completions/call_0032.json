@@ -1,0 +1,8 @@
+{
+  "call_index": 32,
+  "model": "claude-sonnet-4-5-20250929",
+  "stop_reason": "end_turn",
+  "input_tokens": 671,
+  "output_tokens": 242,
+  "content_text": "Here are the extracted knowledge triplets:\n\n(트럼프, 인하했다, 인도 관세)\n(인도 관세, 인하되었다, 50%에서 18%로)\n(인도, 중단 결정했다, 러시아산 원유 구매)\n(트럼프, 합의했다, 모디)\n(미국-인도, 해소 국면, 무역 갈등)\n(애플, 확대했다, 인도 내 아이폰 생산)\n(미국 대인도 수입액, 증가했다, 221억달러)\n(인도, 체결했다, EU와 무역 협정)\n(인도, 낮추고 있다, 미국 시장 의존도)\n(인도, 펼치고 있다, 다각적 경제 외교)"
+}

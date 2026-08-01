@@ -1,0 +1,8 @@
+{
+  "call_index": 14,
+  "model": "claude-sonnet-4-5-20250929",
+  "stop_reason": "end_turn",
+  "input_tokens": 978,
+  "output_tokens": 294,
+  "content_text": "Here are the extracted knowledge triplets:\n\n(중국 해외 유학생 귀국, 증가율, 전년 대비 12%)\n(중국 해외 유학생 귀국, 기록, 역대 최대)\n(귀국 유학생, 학위 소지, 석사 80%)\n(중국 청년 실업률, 달함, 16.5%)\n(귀국 이유, 관련, AI·로봇 첨단 기술 분야 급성장)\n(전공 분야, 포함, 금융공학, 회계학, 법학, 마케팅, 컴퓨터 과학)\n(구직 분야, 포함, AI, 로봇, 우주항공)\n(취업 선호 지역, 집중, 베이징, 상하이, 선전)\n(즈롄자오핀, 평가, 지속적인 추세)\n(정책적 지원, 가속화, AI·첨단 제조업 채용)"
+}
