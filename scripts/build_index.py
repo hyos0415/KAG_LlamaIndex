@@ -28,6 +28,9 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
+from dotenv import load_dotenv
+load_dotenv()
+
 from llama_index.core import Settings
 from llama_index.core.schema import TextNode
 from llama_index.core.node_parser import SemanticSplitterNodeParser
@@ -38,7 +41,7 @@ from llama_index.embeddings.openai import OpenAIEmbedding
 
 from app.etl.enricher import NewsMetadata
 
-MODEL_ID = "claude-sonnet-4-0"
+MODEL_ID = "claude-sonnet-4-5-20250929"
 
 
 # ---------------------------------------------------------------------------
