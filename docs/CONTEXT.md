@@ -222,12 +222,12 @@ v0(8.8 / 26.8)는 역사적 참고값이며 게이트 판정에 사용하지 않
 | Provider | Anthropic |
 | 모델 ID | `claude-sonnet-4-5-20250929` |
 | temperature | 미지정 (llama-index 래퍼 기본값 0.1) |
-| max_tokens | 미지정 (래퍼 기본값 512) |
+| max_tokens | 미지정 (512 — llama-index 래퍼의 모델 무관 상수. 소스 확인 완료. Sonnet 4.5에도 동일 적용되므로 v0'~v4 전 구간에서 고정 조건이다) |
 | timeout | 300.0 |
 
-근거: v0 측정 시점(`3ba9426`)부터 현재 HEAD까지 코드상 변경 없음. 동일 조건 유지가 규모 효과 분리의 전제.
+근거: v0 측정 당시 설정을 유지하려 했으나 claude-sonnet-4-0 폐기로 불가. 후속 세대 중 핀 고정 스냅샷을 선택했다. 외부 제약에 의한 강제 변경이다.
 
-**주의**: `claude-sonnet-4-0`은 별칭이므로 실제 스냅샷이 이동할 수 있다. 모든 실행에서 API 응답의 실제 모델 ID를 기록한다.
+**주의**: `claude-sonnet-4-5-20250929`는 핀 고정 스냅샷이므로 실행 중 이동하지 않는다. 다만 폐기 가능성은 남으므로 모든 실행에서 API 응답의 실제 모델 ID를 기록한다.
 
 **갱신 (2026-08-01)**: `claude-sonnet-4-0`으로 Stage 1 실행 시 API가 404(model not found)를 반환 — 별칭이 이동한 정도가 아니라 완전히 폐기됨을 확인(`client.models.list()`로 접근 가능한 모델 목록에 부재). v0가 그 별칭으로 측정된 뒤 현재 사이에 세대 자체가 바뀌었다는 뜻이며, 이는 v0가 참고값으로만 남고 v0'가 실제 기준선이 되어야 하는 이유를 한 번 더 확증한다. 고정값을 `claude-sonnet-4-5-20250929`로 갱신한다.
 
@@ -246,6 +246,27 @@ v0(8.8 / 26.8)는 역사적 참고값이며 게이트 판정에 사용하지 않
 - `build_and_analyze`의 기본값(`property_graph_store` 미지정 → `SimplePropertyGraphStore`)이 `storage_claude/property_graph_store.json`의 형식과 일치
 
 **주의**: `build_and_analyze`를 통째로 호출하지 않는다. 그래프 구축 단계(문서화 → 추출기 → `PropertyGraphIndex.from_documents`)까지만 재사용하고, 이후의 육각형 리포트 쿼리 단계(`query_engine.query()`)는 포함하지 않는다 — 트리플 추출과 무관한 LLM 호출이 추가되기 때문.
+
+### 2단계 분리 (Stage 1 / Stage 2)
+
+```
+Stage 1  청킹 + 메타데이터 추출 → tests/fixtures/chunks_40.json (40건, 1회만)
+Stage 2  Stage 1 산출물을 읽어 트리플 추출 + 그래프 구축 + persist
+```
+
+목적: 메타데이터 추출 LLM과 embed_model의 변동을 v0'~v4 전 구간에서 제거한다.
+남는 변동 요인은 트리플 추출 하나뿐이다.
+
+**Stage 1 실행 기록 (2026-08-01)**:
+- 모델: `claude-sonnet-4-5-20250929` — 단, Stage 1에 계측이 없어 API 응답 기준 실측이 아니라 추론이다. 근거: 첫 실행이 `claude-sonnet-4-0`으로 첫 기사에서 404 실패하여 산출물이 없었고, 모델 갱신 후 재실행이 40건 전부를 생성했다. 모델 혼입은 구조적으로 불가능하다.
+- 결과: 40건 → 86청크 (2청크 34건, 3청크 6건)
+- 정합성: v0 대상 5건이 2/2/2/2/2 = 10청크로 v0와 일치. embed_model이 OpenAI라 Anthropic 모델 교체의 영향을 받지 않았음을 시사한다. (기록만. 진행 조건으로 사용하지 않는다)
+
+**트리플 캐싱**: v0'와 v1이 같은 10청크를 두 번 추출하면, v0'→v1 차이에 "문서 추가 효과"와 "동일 청크 재추출 노이즈"가 섞인다. `SimpleLLMPathExtractor`는 노드 단위 독립 처리이므로 node_id로 캐싱이 유효하다.
+- `experiments/shared/triple_cache.json`에 node_id → 추출된 트리플 목록 저장
+- Stage 2 실행 시 캐시에 있는 node_id는 추출을 건너뛰고 재사용
+- 캐시 히트/미스 수를 `run_metrics.json`에 기록
+- `--no-cache` 플래그로 우회 가능 (검증용)
 
 ### 정규화 작업 내용 (LLM 호출 0)
 
