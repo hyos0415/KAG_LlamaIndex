@@ -225,6 +225,22 @@ v0(8.8 / 26.8)는 역사적 참고값이며 게이트 판정에 사용하지 않
 
 **주의**: `claude-sonnet-4-0`은 별칭이므로 실제 스냅샷이 이동할 수 있다. 모든 실행에서 API 응답의 실제 모델 ID를 기록한다.
 
+파이프라인에 LLM이 두 개 있다. 위 고정 설정은 트리플 추출용이며,
+`enricher.py`의 메타데이터 추출 LLM과 `SemanticSplitter`의 embed_model은
+별도로 고정해야 한다. 고정하지 않으면 메타데이터 변동이 트리플 추출 입력에
+섞여 규모 효과와 분리되지 않는다.
+
+### 추출 코드 경로 (확정 — §8 미정 6 해결)
+
+트리플 추출 + 그래프 구축은 `jit_builder.py`(`JITGraphAnalyzer.build_and_analyze`)
+경로를 v0'~v4 전 구간 고정한다. `knowledge_graph.py`(`sync_to_neo4j`)는 사용하지 않는다.
+
+근거:
+- `sync_to_neo4j`는 `Neo4jGraphStore`를 하드코딩하므로 로컬 JSON 산출이 구조적으로 불가능 (§8 미정 4의 "로컬 JSON 유지" 결정과 상충)
+- `build_and_analyze`의 기본값(`property_graph_store` 미지정 → `SimplePropertyGraphStore`)이 `storage_claude/property_graph_store.json`의 형식과 일치
+
+**주의**: `build_and_analyze`를 통째로 호출하지 않는다. 그래프 구축 단계(문서화 → 추출기 → `PropertyGraphIndex.from_documents`)까지만 재사용하고, 이후의 육각형 리포트 쿼리 단계(`query_engine.query()`)는 포함하지 않는다 — 트리플 추출과 무관한 LLM 호출이 추가되기 때문.
+
 ### 정규화 작업 내용 (LLM 호출 0)
 
 결정론적 후처리입니다. 추출된 트리플에 사후 적용하므로 추출을 다시 하지 않습니다.
@@ -281,9 +297,9 @@ PREDICATE                     → 제거 (파싱 실패)
 | 3 | 게이트 판정 기준 (v1→v2 효과가 얼마면 200건 생략인가) | **확정** — §6 "게이트 판정 기준" 참고 |
 | 4 | Neo4j 재연결 여부 (또는 로컬 JSON 유지) | **확정** — 로컬 JSON(`storage_claude/property_graph_store.json` 계열)을 v0'~v4 전 구간에서 사용. Neo4j 재연결은 후속 작업으로 미룸. 근거: v0가 로컬 JSON에서 측정됐으므로 저장소 변경이 규모 효과와 섞이면 안 됨 |
 | 5 | 실험 대상 LLM 모델 ID 고정값 | **확정** — §6 "LLM 설정" 참고 |
-| 6 | v0'~v4 추출 코드 경로 (jit_builder.py / knowledge_graph.py) | 미정 — v0' 차단 |
+| 6 | v0'~v4 추출 코드 경로 (jit_builder.py / knowledge_graph.py) | **확정** — §6 "추출 코드 경로" 참고 |
 
-3, 4, 5번 확정 완료. 남은 미정: 1, 2, 6.
+3, 4, 5, 6번 확정 완료. 남은 미정: 1, 2.
 
 ---
 
