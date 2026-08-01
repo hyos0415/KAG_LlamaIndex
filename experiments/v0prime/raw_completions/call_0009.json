@@ -1,0 +1,8 @@
+{
+  "call_index": 9,
+  "model": "claude-sonnet-4-5-20250929",
+  "stop_reason": "end_turn",
+  "input_tokens": 1141,
+  "output_tokens": 219,
+  "content_text": "Here are the extracted knowledge triplets:\n\n(국민의힘, 경험하고 있다, 당내 분열)\n(한동훈, 직위, 전 대표)\n(정성국, 직위, 의원)\n(조광한, 직위, 최고위원)\n(원외 당협위원장협의회, 촉구했다, 정성국 의원직 사퇴)\n(조광한, 지명자, 장동혁)\n(정성국, 발언했다, 의원총회)\n(의원총회, 발생 날짜, 전날)\n(원외 당협위원장 78명, 참여했다, 규탄 성명)\n(당권파, 대립하고 있다, 친한계)"
+}
