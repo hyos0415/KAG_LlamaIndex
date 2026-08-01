@@ -25,6 +25,7 @@ import json
 import os
 import statistics
 import sys
+import time
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
@@ -32,9 +33,10 @@ from dotenv import load_dotenv
 load_dotenv()
 
 from llama_index.core import Settings
-from llama_index.core.schema import TextNode
+from llama_index.core.schema import TextNode, MetadataMode
 from llama_index.core.node_parser import SemanticSplitterNodeParser
 from llama_index.core.indices.property_graph import PropertyGraphIndex, SimpleLLMPathExtractor
+from llama_index.core.graph_stores.types import EntityNode, Relation, KG_NODES_KEY, KG_RELATIONS_KEY
 from llama_index.core.program import LLMTextCompletionProgram
 from llama_index.llms.anthropic import Anthropic
 from llama_index.embeddings.openai import OpenAIEmbedding
@@ -42,6 +44,7 @@ from llama_index.embeddings.openai import OpenAIEmbedding
 from app.etl.enricher import NewsMetadata
 
 MODEL_ID = "claude-sonnet-4-5-20250929"
+TRIPLE_CACHE_PATH = "experiments/shared/triple_cache.json"
 
 
 # ---------------------------------------------------------------------------
@@ -152,6 +155,60 @@ async def run_stage1(input_dir, output_path):
 # Stage 2
 # ---------------------------------------------------------------------------
 
+class CachingLLMPathExtractor(SimpleLLMPathExtractor):
+    """SimpleLLMPathExtractor 와 완전히 동일한 트리플 파싱 로직을 쓰되,
+    node_id 가 캐시에 있으면 LLM 호출 없이 캐시된 (subj, rel, obj) 튜플을 재사용한다.
+
+    docs/CONTEXT.md §6 "2단계 분리" 트리플 캐싱 설계 참고.
+    """
+
+    def __init__(self, *args, triple_cache=None, cache_hits=None, cache_misses=None, **kwargs):
+        super().__init__(*args, **kwargs)
+        object.__setattr__(self, "_triple_cache", triple_cache if triple_cache is not None else {})
+        object.__setattr__(self, "_cache_hits", cache_hits if cache_hits is not None else [])
+        object.__setattr__(self, "_cache_misses", cache_misses if cache_misses is not None else [])
+
+    async def _aextract(self, node):
+        cache = self._triple_cache
+
+        if node.id_ in cache:
+            self._cache_hits.append(node.id_)
+            triples = cache[node.id_]
+        else:
+            self._cache_misses.append(node.id_)
+            text = node.get_content(metadata_mode=MetadataMode.LLM)
+            try:
+                llm_response = await self.llm.apredict(
+                    self.extract_prompt,
+                    text=text,
+                    max_knowledge_triplets=self.max_paths_per_chunk,
+                )
+                triples = self.parse_fn(llm_response)
+            except ValueError:
+                triples = []
+            cache[node.id_] = [list(t) for t in triples]
+
+        existing_nodes = node.metadata.pop(KG_NODES_KEY, [])
+        existing_relations = node.metadata.pop(KG_RELATIONS_KEY, [])
+
+        metadata = node.metadata.copy()
+        for subj, rel, obj in triples:
+            subj_node = EntityNode(name=subj, properties=metadata)
+            obj_node = EntityNode(name=obj, properties=metadata)
+            rel_node = Relation(
+                label=rel,
+                source_id=subj_node.id,
+                target_id=obj_node.id,
+                properties=metadata,
+            )
+            existing_nodes.extend([subj_node, obj_node])
+            existing_relations.append(rel_node)
+
+        node.metadata[KG_NODES_KEY] = existing_nodes
+        node.metadata[KG_RELATIONS_KEY] = existing_relations
+        return node
+
+
 def instrument_anthropic_client(llm, raw_dir):
     """llm._aclient.messages.create 를 감싸 모든 호출의 원시 응답을 raw_dir 에 저장.
 
@@ -234,7 +291,24 @@ def summarize_calls(call_log):
     }
 
 
-async def run_stage2(chunks_path, news_ids, output_dir):
+def load_triple_cache(use_cache):
+    if not use_cache:
+        return {}
+    if os.path.exists(TRIPLE_CACHE_PATH):
+        with open(TRIPLE_CACHE_PATH, encoding="utf-8") as f:
+            return json.load(f)
+    return {}
+
+
+def save_triple_cache(cache, use_cache):
+    if not use_cache:
+        return
+    os.makedirs(os.path.dirname(TRIPLE_CACHE_PATH), exist_ok=True)
+    with open(TRIPLE_CACHE_PATH, "w", encoding="utf-8") as f:
+        json.dump(cache, f, ensure_ascii=False, indent=2)
+
+
+async def run_stage2(chunks_path, news_ids, output_dir, use_cache=True):
     with open(chunks_path, encoding="utf-8") as f:
         all_chunks = json.load(f)
 
@@ -248,6 +322,7 @@ async def run_stage2(chunks_path, news_ids, output_dir):
         selected = all_chunks
 
     print(f"선택된 청크 수: {len(selected)} (news_id {len(set(c['news_id'] for c in selected))}건)")
+    print(f"캐시 사용: {use_cache}")
 
     nodes = [
         TextNode(id_=c["node_id"], text=c["text"], metadata=c["metadata"])
@@ -262,13 +337,25 @@ async def run_stage2(chunks_path, news_ids, output_dir):
     raw_dir = os.path.join(output_dir, "raw_completions")
     call_log = instrument_anthropic_client(llm, raw_dir)
 
-    extractor = SimpleLLMPathExtractor(llm=llm, num_workers=2)
+    triple_cache = load_triple_cache(use_cache)
+    cache_hits, cache_misses = [], []
+    extractor = CachingLLMPathExtractor(
+        llm=llm,
+        num_workers=2,
+        triple_cache=triple_cache,
+        cache_hits=cache_hits,
+        cache_misses=cache_misses,
+    )
 
+    start_time = time.monotonic()
     index = PropertyGraphIndex(
         nodes=nodes,
         kg_extractors=[extractor],
         show_progress=True,
     )
+    elapsed_seconds = round(time.monotonic() - start_time, 1)
+
+    save_triple_cache(triple_cache, use_cache)
 
     os.makedirs(output_dir, exist_ok=True)
     index.storage_context.persist(persist_dir=output_dir)
@@ -276,6 +363,10 @@ async def run_stage2(chunks_path, news_ids, output_dir):
     run_metrics = {
         "chunk_count_in": len(nodes),
         "news_id_count": len(set(c["news_id"] for c in selected)),
+        "cache_enabled": use_cache,
+        "cache_hits": len(cache_hits),
+        "cache_misses": len(cache_misses),
+        "elapsed_seconds": elapsed_seconds,
         **summarize_calls(call_log),
     }
     with open(os.path.join(output_dir, "run_metrics.json"), "w", encoding="utf-8") as f:
@@ -304,6 +395,7 @@ def main():
     p2.add_argument("--chunks", default="tests/fixtures/chunks_40.json")
     p2.add_argument("--news-ids", default=None, help="쉼표로 구분된 news_id 목록. 생략 시 전체")
     p2.add_argument("--output-dir", required=True)
+    p2.add_argument("--no-cache", action="store_true", help="트리플 캐시를 쓰지 않고 전량 재추출 (검증용)")
 
     args = parser.parse_args()
 
@@ -311,7 +403,7 @@ def main():
         asyncio.run(run_stage1(args.input_dir, args.output))
     elif args.stage == "stage2":
         news_ids = args.news_ids.split(",") if args.news_ids else None
-        asyncio.run(run_stage2(args.chunks, news_ids, args.output_dir))
+        asyncio.run(run_stage2(args.chunks, news_ids, args.output_dir, use_cache=not args.no_cache))
 
 
 if __name__ == "__main__":
