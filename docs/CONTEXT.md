@@ -31,17 +31,19 @@
 
 ```
 완료: 현황 조사(§3) → v0 강등/v0' 신설 결정(§6) →
-      §8 미정 1~6 중 3·4·5·6 확정 →
-      scripts/build_index.py 작성(Stage1/Stage2 + 트리플 캐싱) →
-      Stage 1 실행(40건→86청크, tests/fixtures/chunks_40.json 커밋됨) →
-      v0' 측정(5건, experiments/v0prime/, tests/fixtures/baseline_v0prime.json 커밋됨) →
-      v0 vs v0' 비교로 발견 6·7·9 재검증 + 발견 12·13 도출
+      §8 미정 1~6 전부 확정 (1·2는 v1 실측 재료 기반으로 최종 확정) →
+      scripts/build_index.py 작성(Stage1/Stage2 + 트리플 캐싱, 캐시 스키마에 provenance 포함) →
+      Stage 1 실행(40건→86청크) → v0' 측정(5건) → v1 측정(40건, experiments/v1/) →
+      게이트 판정: 무변화 → 수집 중단, 정규화로 전환(§4 소거법으로 자유 스키마 추출기가
+      근본 원인임을 확정) →
+      §8 미정 1(보수적 규칙 기반 별칭)·2(온톨로지 범위 제외, v5로 이관) 확정 →
+      scripts/normalize.py 구현 + v1 데이터 드라이런(병합 5쌍/0.54%, 관계 460→444종/3.5%) —
+      실제 v2a/v2b/v2c 실행은 아직 안 함
 
-다음 실행 단계: v1 (40건 전체 색인, chunks_40.json 이미 준비됨)
-  → `python scripts/build_index.py stage2 --output-dir experiments/v1` (news-ids 생략 시 전체 40건)
-  → §7.6에 따라 명시적 지시 없이 먼저 실행하지 말 것. 아직 지시 없음.
+다음 실행 단계: v2a(엔티티만 정규화) / v2b(관계만 정규화) / v2c(둘 다) 실제 실행
+  → §7.6에 따라 명시적 지시 없이 먼저 실행하지 말 것. 아직 지시 없음(다음 지시 예정).
 
-남은 미정: §8의 1(별칭 사전 범위), 2(관계 온톨로지 목표 개수) — v1 이후 다룰 예정.
+남은 미정: 없음 (§8 전체 확정).
 ```
 
 ---
@@ -365,6 +367,8 @@ Stage 2  Stage 1 산출물을 읽어 트리플 추출 + 그래프 구축 + persi
 - 캐시 히트/미스 수를 `run_metrics.json`에 기록
 - `--no-cache` 플래그로 우회 가능 (검증용)
 
+**스키마 결함 수정 (2026-08-01)**: 캐시 항목이 `[[subj,rel,obj],...]` 리스트만 저장해 model_id/시각 provenance가 없었다(storage_claude가 재현 불가였던 원인과 동일한 종류의 누락). `{"model_id", "extracted_at", "provenance", "triples"}` 구조로 변경했다. 기존 86개 항목은 `claude-sonnet-4-5-20250929`로 소급 기록하고 `"provenance": "backfilled_inferred"` 플래그를 달았다(실제로는 git 이력 + 스모크 테스트 시점 API 응답으로 검증된 값이나, 캐시 파일 자체에는 원래 기록되지 않았으므로 소급 처리로 분류). 이후 신규 항목은 `"provenance": "measured"`로 기록된다.
+
 ### §8 미정 1·2 결정 재료 (v1 실측, 온톨로지/사전 확정 아님)
 
 전체 데이터: `tests/fixtures/v2_decision_inputs.json`
@@ -407,6 +411,8 @@ Stage 2  Stage 1 산출물을 읽어 트리플 추출 + 그래프 구축 + persi
 
 이 규칙은 추정 상한 33.5%보다 훨씬 적게 병합한다. **의도된 것이다.** 오병합은 그래프를 왜곡해 정규화 효과를 부풀리므로, v2 결과는 정규화 효과의 **하한**으로 해석한다. 하한조차 부족하면 결론이 더 강해진다.
 
+**구현 완료, 실행은 안 함**: `scripts/normalize.py`(`find_entity_merge_pairs`, `build_relation_stem_map`)에 위 규칙을 구현. v1 데이터(925 엔티티/460 타입)로 드라이런한 결과는 `tests/fixtures/normalize_v1_dryrun.json` — **병합 쌍 5개(0.54%)**만 잡혔다(예: 이재명↔이재명 대통령, 국민의힘↔국민의힘 대표). 33.5% 과대추정 대비 극히 보수적이며 의도한 하한이다. 실제 v2a/v2b/v2c 그래프 재구축(이 alias_map/stem_map을 실제 트리플에 적용)은 아직 실행하지 않았다.
+
 **관계** — 활용형 정규화만 적용 (확정 — §8 미정 2 해결: 온톨로지는 이번 범위 제외)
 
 관계 타입 460종 중 70.9%가 1회만 등장하고, 활용형 정규화 시뮬레이션은 374→358종(4.3%)에 그친다. 460종을 수작업 매핑하는 것은 불가능하며 200건 외삽 시 2,000종을 넘는다.
@@ -414,6 +420,8 @@ Stage 2  Stage 1 산출물을 읽어 트리플 추출 + 그래프 구축 + persi
 실질적 온톨로지 적용은 스키마 제약 추출기로의 교체를 요구하며, 이는 후처리가 아니라 재추출이므로 이번 범위를 벗어난다.
 
 **확정: v2b는 활용형 정규화만 적용한다. 온톨로지 기반 매핑은 후속 v5(스키마 제약 추출)로 이관한다** (§9 참고).
+
+`scripts/normalize.py`의 `build_relation_stem_map`으로 v1 데이터 드라이런: **460종 → 444종(16개 감소, 3.5%)**. 앞서 시뮬레이션한 374→358(한국어 타입만, 4.3%)과 같은 방향, 영문 타입 포함 전체 기준으로는 3.5%. 실행은 안 함 — `tests/fixtures/normalize_v1_dryrun.json` 참고.
 
 기존에 적어뒀던 예시(선고/선고했다/판단/피해입었다/특징/모습/PREDICATE)는 **Neo4j 데모 데이터**(에디슨모터스 판결, 실제 기사와 무관)에서 온 것이었고 v0' 실제 데이터 존재 여부가 확인된 바 없어 삭제한다. 실제 v0' 73종 전체 빈도 목록은 `tests/fixtures/baseline_v0prime.json`의 `relation_type_freq` 참고.
 
@@ -506,7 +514,12 @@ Is · Died in · Died from · Member of · Spouse of · Married · Divorced in
 - `tests/fixtures/chunks_40.json` — Stage 1 산출물, 40건/86청크 (§7.9에 따라 덮어쓰기 금지)
 - `tests/fixtures/baseline_v0prime.json` — v0' 측정 지표 전체(relation_type_freq 73종 포함)
 - `experiments/v0prime/` — v0' PropertyGraphIndex persist 결과 + `run_metrics.json` + `raw_completions/`(호출 10건 원시 응답)
-- `experiments/shared/triple_cache.json` — node_id별 트리플 캐시 (v0'~v4 공유, 누적됨)
+- `experiments/v1/` — v1(40건) persist 결과 + `run_metrics.json` + `raw_completions/`(호출 73건)
+- `experiments/shared/triple_cache.json` — node_id별 트리플 캐시, `{model_id, extracted_at, provenance, triples}` 구조 (v0'~v4 공유, 누적됨)
+- `tests/fixtures/baseline_v1.json` — v1 측정 지표(전체 40건 + 증권12/사회10 부분집합)
+- `tests/fixtures/v2_decision_inputs.json` — §8 미정 1·2 결정 재료(관계 460종 분포, 엔티티 925개 A/B/C 추정)
+- `scripts/normalize.py` — v2a/v2b 정규화 규칙 구현(엔티티 병합·관계 활용형 정규화). 아직 미실행
+- `tests/fixtures/normalize_v1_dryrun.json` — 위 규칙의 v1 데이터 드라이런 결과(병합 5쌍, 관계 460→444종)
 
 **작성 예정**:
 - `docs/design-review.md` — 최종 진단 문서

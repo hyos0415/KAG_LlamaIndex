@@ -173,7 +173,9 @@ class CachingLLMPathExtractor(SimpleLLMPathExtractor):
 
         if node.id_ in cache:
             self._cache_hits.append(node.id_)
-            triples = cache[node.id_]
+            entry = cache[node.id_]
+            # 구버전 캐시(순수 트리플 리스트) 호환: provenance 없이 읽힌 값은 그대로 사용
+            triples = entry["triples"] if isinstance(entry, dict) else entry
         else:
             self._cache_misses.append(node.id_)
             text = node.get_content(metadata_mode=MetadataMode.LLM)
@@ -186,7 +188,15 @@ class CachingLLMPathExtractor(SimpleLLMPathExtractor):
                 triples = self.parse_fn(llm_response)
             except ValueError:
                 triples = []
-            cache[node.id_] = [list(t) for t in triples]
+            import datetime
+            cache[node.id_] = {
+                # self.llm.model은 요청 모델 문자열이다. 핀 고정 스냅샷은
+                # 실제 API 응답 모델과 항상 일치함을 별도로 확인했다(§3 발견 11 검증 절차 참고).
+                "model_id": self.llm.model,
+                "extracted_at": datetime.datetime.now().isoformat(),
+                "provenance": "measured",
+                "triples": [list(t) for t in triples],
+            }
 
         existing_nodes = node.metadata.pop(KG_NODES_KEY, [])
         existing_relations = node.metadata.pop(KG_RELATIONS_KEY, [])
