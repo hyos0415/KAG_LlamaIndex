@@ -127,6 +127,59 @@ def find_entity_clusters_hi(entities):
     return type_b, multi_clusters
 
 
+def find_entity_clusters_mid(entities, max_cluster_size=5):
+    """사후 설계 (v2 결과 확인 후 추가, 2026-08-02). 사전 등록된 v2a-hi 판정을
+    변경하는 것이 아니라, 무효화된 v2a-hi(거대 오병합 허브)를 대체할 현실적
+    추정치를 구하기 위한 후속 조사다. §6 "v2a-mid" 참고.
+
+    v2a-hi와 동일한 전이적 substring 클러스터링을 쓰되, 클러스터 크기가
+    max_cluster_size를 넘으면 병합을 거부한다. 크기 상한 5는 "이재명/이재명
+    대통령/대통령" 같은 정당한 다원 병합은 허용하되 34개짜리 "경제" 허브
+    (서울/경찰/경찰청/삼성전자 등을 한 노드로 묶은 오병합) 같은 거대 허브는
+    차단하기 위함이다. 상한 값은 클러스터 크기 분포를 보고 조정될 수 있다
+    (§6 참고 — 사람이 결정). 구현만 하고 실행하지 않는다.
+    """
+    def has_event_keyword(s):
+        return any(kw in s for kw in EVENT_KEYWORDS_HI)
+
+    names_all = sorted(set(entities))
+    type_b = [e for e in names_all if has_event_keyword(e) and len(e) > 3]
+    remaining = sorted(set(names_all) - set(type_b))
+
+    parent = {x: x for x in remaining}
+    size = {x: 1 for x in remaining}
+
+    def find(x):
+        while parent[x] != x:
+            parent[x] = parent[parent[x]]
+            x = parent[x]
+        return x
+
+    def union(x, y):
+        rx, ry = find(x), find(y)
+        if rx == ry:
+            return True
+        if size[rx] + size[ry] > max_cluster_size:
+            return False  # 상한 초과 시 병합 거부 (거대 허브 차단)
+        parent[rx] = ry
+        size[ry] += size[rx]
+        return True
+
+    n = len(remaining)
+    for i in range(n):
+        for j in range(i + 1, n):
+            a, b = remaining[i], remaining[j]
+            if len(a) >= 2 and len(b) >= 2 and (a in b or b in a):
+                union(a, b)
+
+    clusters = {}
+    for x in remaining:
+        clusters.setdefault(find(x), []).append(x)
+    multi_clusters = {r: members for r, members in clusters.items() if len(members) > 1}
+
+    return type_b, multi_clusters
+
+
 def stem_relation_type(t):
     s = t
     changed = True
@@ -161,7 +214,7 @@ def load_graph(path):
     return entities, rel_types
 
 
-def dry_run_report(graph_path, mode="lo"):
+def dry_run_report(graph_path, mode="lo", max_cluster_size=5):
     entities, rel_types = load_graph(graph_path)
     total_entities = len(set(entities))
 
@@ -195,6 +248,22 @@ def dry_run_report(graph_path, mode="lo"):
             "sample_clusters": [sorted(m, key=len) for m in list(multi_clusters.values())[:15]],
             "warning": "의도적 과다 병합 — 오탐(예: 서울/경찰/경찰청) 포함, 고치지 않음. 정규화 효과의 상한 측정용.",
         }
+    elif mode == "mid":
+        type_b, multi_clusters = find_entity_clusters_mid(entities, max_cluster_size=max_cluster_size)
+        entities_in_clusters = sum(len(m) for m in multi_clusters.values())
+        reduction = entities_in_clusters - len(multi_clusters)
+        entity_report = {
+            "mode": "mid",
+            "max_cluster_size": max_cluster_size,
+            "total_entities": total_entities,
+            "type_b_excluded": len(type_b),
+            "cluster_count": len(multi_clusters),
+            "entities_in_clusters": entities_in_clusters,
+            "expected_reduction": reduction,
+            "expected_reduction_pct_of_total": round(reduction / total_entities * 100, 2),
+            "sample_clusters": [sorted(m, key=len) for m in list(multi_clusters.values())[:15]],
+            "note": "사후 설계 (v2 결과 확인 후 추가). 판정은 components_per_doc이 아니라 isolated_doc_ratio 기준 — §6 'v2a-mid' 참고. 구현만, 아직 미실행.",
+        }
     else:
         raise ValueError(f"unknown mode: {mode}")
 
@@ -218,11 +287,12 @@ def dry_run_report(graph_path, mode="lo"):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--graph", required=True, help="property_graph_store.json 경로")
-    parser.add_argument("--mode", choices=["lo", "hi"], default="lo", help="lo=보수 규칙(하한), hi=substring 전이적 클러스터링(상한, 의도적 과다병합)")
+    parser.add_argument("--mode", choices=["lo", "hi", "mid"], default="lo", help="lo=보수 규칙(하한), hi=substring 전이적 클러스터링(상한, 의도적 과다병합), mid=전이적 클러스터링+크기 상한(사후 설계, 아직 미실행)")
+    parser.add_argument("--max-cluster-size", type=int, default=5, help="mid 모드 전용 클러스터 크기 상한 (기본 5, 클러스터 분포를 보고 조정 가능)")
     parser.add_argument("--dry-run", action="store_true", default=True, help="기본값. 실제 그래프를 만들지 않고 예상 건수만 출력")
     args = parser.parse_args()
 
-    report = dry_run_report(args.graph, mode=args.mode)
+    report = dry_run_report(args.graph, mode=args.mode, max_cluster_size=args.max_cluster_size)
     print(json.dumps(report, ensure_ascii=False, indent=2))
 
 
