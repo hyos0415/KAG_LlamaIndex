@@ -646,7 +646,7 @@ Is · Died in · Died from · Member of · Spouse of · Married · Divorced in
 6. **ETL/DAG를 임의로 실행하지 않는다.** 색인은 명시적 지시가 있을 때만
 7. **`docs/archive/` 를 참조하지 않는다.** 폐기된 설계
 8. **미정 사항을 임의로 정하지 않는다.** §8 참조. 물어볼 것
-9. **Stage 1 산출물(`tests/fixtures/chunks_40.json`)을 덮어쓰지 않는다.** v0'~v4 전 구간의 공유 입력이므로 변경 시 모든 측정 지점이 무효가 된다. 로컬 보관. 저작권상 저장소에 포함하지 않는다 — `docs/DATA.md` 참고
+9. **Stage 1 산출물(`tests/fixtures/chunks_40.json`)을 덮어쓰지 않는다.** v0'~v4 전 구간의 공유 입력이므로 변경 시 모든 측정 지점이 무효가 된다. 로컬 보관. 저작권상 저장소에 포함하지 않는다 — `DATA.md` 참고
 
 ---
 
@@ -680,7 +680,7 @@ Is · Died in · Died from · Member of · Spouse of · Married · Divorced in
 
 ## 10. 산출물
 
-**저장소 포함 여부 표기 (2026-08-02 히스토리 재작성 이후, `docs/DATA.md` 참고)**:
+**저장소 포함 여부 표기 (2026-08-02 히스토리 재작성 이후, `DATA.md` 참고)**:
 `[포함]` 저장소에 커밋됨 · `[제외]` `.gitignore` 처리, 로컬에만 존재(저작권/용량) · `[대체]` 원본은 제외, 축약본이 그 자리를 대신함
 
 - `docs/00-baseline-survey.md` — 현황 조사 전문 `[포함]`
@@ -707,7 +707,7 @@ Is · Died in · Died from · Member of · Spouse of · Married · Divorced in
 - `tests/fixtures/baseline_v2a-manual-strict.json` / `baseline_v2a-manual-loose.json` — 판정 기반 대조군(0쌍)/기술적 동일 4쌍 병합 지표 `[포함]`
 - `tests/fixtures/entity_length_reappearance.json` — 길이별(1-4/5-8/9-15/16+자) 재등장률, 전체40 + 증권12 부분집합 `[포함]`
 - `docs/design-review.md` — 최종 진단 문서, §3~§7 전체 완성 `[포함]`
-- `docs/DATA.md` — 데이터 포함 범위·재현 방법 안내 `[포함]`
+- `DATA.md` — 데이터 포함 범위·재현 방법 안내 `[포함]`
 
 **작성 예정**:
 - `docs/found-issues.md` — 범위 밖 발견 사항
