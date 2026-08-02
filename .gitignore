@@ -164,3 +164,10 @@ migrate_to_es.py
 elasticsearch_data/
 neo4j_data/
 *.log
+
+# 진단 실험 원본 데이터 (기사 원문·임베딩·요약 — 저작권/용량. docs/DATA.md 참고)
+experiments/*/default__vector_store.json
+experiments/*/docstore.json
+experiments/*/index_store.json
+experiments/*/property_graph_store.json
+tests/fixtures/chunks_40.json

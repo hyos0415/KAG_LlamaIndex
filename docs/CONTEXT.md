@@ -54,7 +54,7 @@
       (같은 문서 내 쌍은 조각화 해소에 기여 안 함, 제외) → 교차 문서 쌍 1,743개 중
       직접 substring 193개 / 전이 1,550개, 100쌍 초과로 직접 193개만 1차 수록,
       전이는 보류 → 발견 17(긴 서술구가 가짜 다리를 만듦 — §4 소거법 마지막 칸) 추가 →
-      193개 전수 판정 전 표본 기반 중지 규칙 사전 등록(`393d5b2`) →
+      193개 전수 판정 전 표본 기반 중지 규칙 사전 등록(`5c21933`, 2026-08-02 히스토리 재작성 전 해시는 `393d5b2` — design-review.md §3 참고) →
       고정 시드(42)로 40개 표본 추출(`docs/cluster-review-sample40.md`) →
       scripts/normalize.py에 --pairs-file 옵션 구현(전이 클러스터링 없이 판정된 쌍만 병합) —
       드라이런 스모크 테스트만, 실제 판정 결과 미적용 →
@@ -636,7 +636,7 @@ Is · Died in · Died from · Member of · Spouse of · Married · Divorced in
 6. **ETL/DAG를 임의로 실행하지 않는다.** 색인은 명시적 지시가 있을 때만
 7. **`docs/archive/` 를 참조하지 않는다.** 폐기된 설계
 8. **미정 사항을 임의로 정하지 않는다.** §8 참조. 물어볼 것
-9. **Stage 1 산출물(`tests/fixtures/chunks_40.json`)을 덮어쓰지 않는다.** v0'~v4 전 구간의 공유 입력이므로 변경 시 모든 측정 지점이 무효가 된다.
+9. **Stage 1 산출물(`tests/fixtures/chunks_40.json`)을 덮어쓰지 않는다.** v0'~v4 전 구간의 공유 입력이므로 변경 시 모든 측정 지점이 무효가 된다. 로컬 보관. 저작권상 저장소에 포함하지 않는다 — `docs/DATA.md` 참고
 
 ---
 
@@ -670,27 +670,34 @@ Is · Died in · Died from · Member of · Spouse of · Married · Divorced in
 
 ## 10. 산출물
 
-**이미 존재함**:
-- `docs/00-baseline-survey.md` — 현황 조사 전문
-- `scripts/build_index.py` — Stage 1(청킹+메타데이터)/Stage 2(트리플 추출+그래프 구축, 트리플 캐싱, 계측 포함) CLI
-- `tests/fixtures/chunks_40.json` — Stage 1 산출물, 40건/86청크 (§7.9에 따라 덮어쓰기 금지)
-- `tests/fixtures/baseline_v0prime.json` — v0' 측정 지표 전체(relation_type_freq 73종 포함)
-- `experiments/v0prime/` — v0' PropertyGraphIndex persist 결과 + `run_metrics.json` + `raw_completions/`(호출 10건 원시 응답)
-- `experiments/v1/` — v1(40건) persist 결과 + `run_metrics.json` + `raw_completions/`(호출 73건)
-- `experiments/shared/triple_cache.json` — node_id별 트리플 캐시, `{model_id, extracted_at, provenance, triples}` 구조 (v0'~v4 공유, 누적됨)
-- `tests/fixtures/baseline_v1.json` — v1 측정 지표(전체 40건 + 증권12/사회10 부분집합)
-- `tests/fixtures/v2_decision_inputs.json` — §8 미정 1·2 결정 재료(관계 460종 분포, 엔티티 925개 A/B/C 추정)
-- `scripts/normalize.py` — v2a/v2b 정규화 규칙 구현(엔티티 병합·관계 활용형 정규화). 아직 미실행
-- `tests/fixtures/normalize_v1_lo_dryrun.json` — v2a-lo(보수 규칙) + v2b 드라이런 결과(병합 5쌍/0.54%, 관계 460→444종)
-- `tests/fixtures/normalize_v1_hi_dryrun.json` — v2a-hi(의도적 과다 병합) 드라이런 결과(394→84클러스터, 310개/33.51% 감소)
-- `tests/fixtures/entity_hapax.json` — 엔티티 문서 출현 분포(발견 15 근거, 95.5% 단발성)
-- `tests/fixtures/baseline_v2a-lo.json` / `v2a-hi.json` / `v2b.json` / `v2c.json` — v2 4변형 지표(전체40 + 증권12/사회10)
-- `tests/fixtures/v2a_hi_bridge_analysis.json` — v2a-hi 판정 무효화 근거(v1 고립 10건의 브릿지 클러스터, 크기 분포)
-- `docs/cluster-review.md` — 교차 문서 쌍 검토 시트(직접 substring 193개 1차 수록, 전이 1,550개 보류, 판정란 공란 — 사람이 채움)
-- `docs/cluster-review-sample40.md` — 193개 중 고정 시드(42)로 뽑은 40개 표본, 판정 완료(유의미한 별칭 0/40)
-- `tests/fixtures/baseline_v2a-manual-strict.json` / `baseline_v2a-manual-loose.json` — 판정 기반 대조군(0쌍)/기술적 동일 4쌍 병합 지표
-- `tests/fixtures/entity_length_reappearance.json` — 길이별(1-4/5-8/9-15/16+자) 재등장률, 전체40 + 증권12 부분집합
-- `docs/design-review.md` — 최종 진단 문서 골격 + §4 확정(엔티티 정규화 기각), §7 결론 서술은 진행 중
+**저장소 포함 여부 표기 (2026-08-02 히스토리 재작성 이후, `docs/DATA.md` 참고)**:
+`[포함]` 저장소에 커밋됨 · `[제외]` `.gitignore` 처리, 로컬에만 존재(저작권/용량) · `[대체]` 원본은 제외, 축약본이 그 자리를 대신함
+
+- `docs/00-baseline-survey.md` — 현황 조사 전문 `[포함]`
+- `scripts/build_index.py` — Stage 1(청킹+메타데이터)/Stage 2(트리플 추출+그래프 구축, 트리플 캐싱, 계측 포함) CLI `[포함]`
+- `scripts/strip_graph.py` — property_graph_store.json에서 본문/임베딩/요약 제거해 graph_public.json 생성 `[포함]`
+- `scripts/verify_metrics.py` — graph_public.json으로 §6 지표 재계산, baseline_v*.json과 대조 `[포함]`
+- `tests/fixtures/chunks_40.json` — Stage 1 산출물, 40건/86청크 (§7.9에 따라 덮어쓰기 금지) `[제외]` — 기사 원문 포함
+- `tests/fixtures/baseline_v0prime.json` — v0' 측정 지표 전체(relation_type_freq 73종 포함) `[포함]`
+- `experiments/v0prime/property_graph_store.json` — 본문/임베딩/요약 포함 원본 `[제외]`
+- `experiments/v0prime/graph_public.json` — 위 원본의 축약본(엔티티/관계/트리플/provenance만) `[대체][포함]`
+- `experiments/v0prime/` 나머지(`run_metrics.json`, `raw_completions/`, `graph_store.json`, `image__vector_store.json`) `[포함]` — `default__vector_store.json`/`docstore.json`/`index_store.json`은 `[제외]`
+- `experiments/v1/` — v0prime과 동일한 포함/제외 구조 (property_graph_store.json → graph_public.json 대체, default__vector_store.json/docstore.json/index_store.json 제외)
+- `experiments/shared/triple_cache.json` — node_id별 트리플 캐시, `{model_id, extracted_at, provenance, triples}` 구조 (v0'~v4 공유, 누적됨) `[포함]`
+- `tests/fixtures/baseline_v1.json` — v1 측정 지표(전체 40건 + 증권12/사회10 부분집합) `[포함]`
+- `tests/fixtures/v2_decision_inputs.json` — §8 미정 1·2 결정 재료(관계 460종 분포, 엔티티 925개 A/B/C 추정) `[포함]`
+- `scripts/normalize.py` — v2a/v2b 정규화 규칙 구현(엔티티 병합·관계 활용형 정규화). 아직 미실행 `[포함]`
+- `tests/fixtures/normalize_v1_lo_dryrun.json` — v2a-lo(보수 규칙) + v2b 드라이런 결과(병합 5쌍/0.54%, 관계 460→444종) `[포함]`
+- `tests/fixtures/normalize_v1_hi_dryrun.json` — v2a-hi(의도적 과다 병합) 드라이런 결과(394→84클러스터, 310개/33.51% 감소) `[포함]`
+- `tests/fixtures/entity_hapax.json` — 엔티티 문서 출현 분포(발견 15 근거, 95.5% 단발성) `[포함]`
+- `tests/fixtures/baseline_v2a-lo.json` / `v2a-hi.json` / `v2b.json` / `v2c.json` — v2 4변형 지표(전체40 + 증권12/사회10) `[포함]`
+- `tests/fixtures/v2a_hi_bridge_analysis.json` — v2a-hi 판정 무효화 근거(v1 고립 10건의 브릿지 클러스터, 크기 분포) `[포함]`
+- `docs/cluster-review.md` — 교차 문서 쌍 검토 시트(직접 substring 193개 1차 수록, 전이 1,550개 보류, 판정란 공란 — 사람이 채움) `[포함]`
+- `docs/cluster-review-sample40.md` — 193개 중 고정 시드(42)로 뽑은 40개 표본, 판정 완료(유의미한 별칭 0/40) `[포함]`
+- `tests/fixtures/baseline_v2a-manual-strict.json` / `baseline_v2a-manual-loose.json` — 판정 기반 대조군(0쌍)/기술적 동일 4쌍 병합 지표 `[포함]`
+- `tests/fixtures/entity_length_reappearance.json` — 길이별(1-4/5-8/9-15/16+자) 재등장률, 전체40 + 증권12 부분집합 `[포함]`
+- `docs/design-review.md` — 최종 진단 문서, §3~§7 전체 완성 `[포함]`
+- `docs/DATA.md` — 데이터 포함 범위·재현 방법 안내 `[포함]`
 
 **작성 예정**:
 - `docs/found-issues.md` — 범위 밖 발견 사항
