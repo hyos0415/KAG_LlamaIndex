@@ -1,0 +1,119 @@
+{
+  "measured_at": "2026-08-02",
+  "full_v1": {
+    "1-4": {
+      "count": 283,
+      "pct_of_total": 30.6,
+      "reappear_count": 26,
+      "reappear_rate": 9.2,
+      "avg_docs": 1.145,
+      "examples": [
+        "코스피",
+        "코스닥",
+        "이재명",
+        "삼성전자",
+        "기사"
+      ]
+    },
+    "5-8": {
+      "count": 386,
+      "pct_of_total": 41.7,
+      "reappear_count": 12,
+      "reappear_rate": 3.1,
+      "avg_docs": 1.036,
+      "examples": [
+        "Sk하이닉스",
+        "이재명 대통령",
+        "미래에셋증권",
+        "이재명 정부",
+        "2026년"
+      ]
+    },
+    "9-15": {
+      "count": 227,
+      "pct_of_total": 24.5,
+      "reappear_count": 4,
+      "reappear_rate": 1.8,
+      "avg_docs": 1.031,
+      "examples": [
+        "2026년 2월 3일",
+        "양도세 중과 유예",
+        "2026-02-03",
+        "2025년 12월",
+        "바이오·로봇·2차전지"
+      ]
+    },
+    "16+": {
+      "count": 29,
+      "pct_of_total": 3.1,
+      "reappear_count": 0,
+      "reappear_rate": 0.0,
+      "avg_docs": 1.0,
+      "examples": [
+        "Kb로 국내주식 옮기고 거래하면 쿠폰이 와르르",
+        "비대면 또는 은행연계 계좌 보유 개인고객",
+        "순입고 금액 100만원당 2천원",
+        "삼정kpmg 세무자문부문 대표",
+        "2026년 3월 7일∼7월 5일"
+      ]
+    }
+  },
+  "stock_12_subset": {
+    "1-4": {
+      "count": 76,
+      "pct_of_total": 26.5,
+      "reappear_count": 14,
+      "reappear_rate": 18.4,
+      "avg_docs": 1.342,
+      "examples": [
+        "코스피",
+        "기사",
+        "이재명",
+        "삼성전자",
+        "코스닥"
+      ]
+    },
+    "5-8": {
+      "count": 128,
+      "pct_of_total": 44.6,
+      "reappear_count": 5,
+      "reappear_rate": 3.9,
+      "avg_docs": 1.047,
+      "examples": [
+        "Sk하이닉스",
+        "6.84%",
+        "미래에셋증권",
+        "이재명 정부",
+        "2026년"
+      ]
+    },
+    "9-15": {
+      "count": 76,
+      "pct_of_total": 26.5,
+      "reappear_count": 1,
+      "reappear_rate": 1.3,
+      "avg_docs": 1.053,
+      "examples": [
+        "2026년 2월 3일",
+        "코스닥·벤처·혁신기업",
+        "가공세금계산서 가산세율",
+        "타사대체 입고 이벤트",
+        "최대 400만원 쿠폰 혜택"
+      ]
+    },
+    "16+": {
+      "count": 7,
+      "pct_of_total": 2.4,
+      "reappear_count": 0,
+      "reappear_rate": 0.0,
+      "avg_docs": 1.0,
+      "examples": [
+        "비대면 또는 은행연계 계좌 보유 개인고객",
+        "5년 10개월 만 최고 상승률",
+        "하나 모두 성장 k미래전략산업 벤처펀드",
+        "Kb로 국내주식 옮기고 거래하면 쿠폰이 와르르",
+        "주가조작 신고 포상금 대폭 확대"
+      ]
+    }
+  }
+}

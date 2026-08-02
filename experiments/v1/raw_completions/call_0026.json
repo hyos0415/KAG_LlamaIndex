@@ -1,0 +1,8 @@
+{
+  "call_index": 26,
+  "model": "claude-sonnet-4-5-20250929",
+  "stop_reason": "end_turn",
+  "input_tokens": 965,
+  "output_tokens": 261,
+  "content_text": "Here are the extracted knowledge triplets:\n\n1. (안권섭 특검팀, 기소, 쿠팡 CFS 전현직 대표)\n2. (쿠팡 CFS, 미지급, 퇴직금)\n3. (퇴직금 미지급 규모, is, 1억2000여만원)\n4. (피해 근로자, is, 40명)\n5. (취업규칙 변경, 발생 시기, 2023년 5월)\n6. (쿠팡 CFS, 변경, 취업규칙)\n7. (엄 전 대표, 혐의, 퇴직금 미지급)\n8. (근로자, 유형, 일용직)\n9. (사건, 영향, 플랫폼 근로자)\n10. (특검팀, 확인, 일방적 지급기준 변경)"
+}

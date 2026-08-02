@@ -1,0 +1,8 @@
+{
+  "call_index": 10,
+  "model": "claude-sonnet-4-5-20250929",
+  "stop_reason": "end_turn",
+  "input_tokens": 447,
+  "output_tokens": 205,
+  "content_text": "(코스피, 급등, 6.84%)\n(코스피, 기록, 5년 10개월 만 최고 상승률)\n(국내 증시 시가총액, 돌파, 5000조원)\n(국내 증시 시가총액, 돌파 시기, 사상 처음)\n(코스닥 지수, 상승, 4% 넘게)\n(삼성전자, 시가총액, 991조5394억원)\n(삼성전자, 눈앞, 1000조원 돌파)\n(1000조원 돌파, 기준, 보통주)\n(sentiment, is, 긍정)\n(category, is, 경제)"
+}

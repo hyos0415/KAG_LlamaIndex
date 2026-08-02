@@ -1,0 +1,8 @@
+{
+  "call_index": 2,
+  "model": "claude-sonnet-4-5-20250929",
+  "stop_reason": "end_turn",
+  "input_tokens": 766,
+  "output_tokens": 241,
+  "content_text": "Here are the extracted knowledge triplets:\n\n(태백산 눈축제, 발생, 노점 위생 논란)\n(노점, 행위, 막걸리병 어묵탕 투입)\n(태백시, 조치, 노점 영업중단)\n(태백시, 발표, 사과)\n(시민단체, 요구, 시장 사과)\n(시민단체, 요구, 축제 운영 구조 개편)\n(시민단체, 촉구, 시민주도 축제위원회 구성)\n(태백산 눈축제, 개최 시작, 1월 31일)\n(태백산 눈축제, 운영, 겨울 체험 프로그램)\n(눈꽃 등반대회, 예정일, 2월 7일)"
+}

@@ -1,0 +1,8 @@
+{
+  "call_index": 30,
+  "model": "claude-sonnet-4-5-20250929",
+  "stop_reason": "end_turn",
+  "input_tokens": 1448,
+  "output_tokens": 246,
+  "content_text": "Here are the extracted knowledge triplets:\n\n(트럼프, 인하했다, 인도 관세)\n(인도 관세, 인하되었다, 50%에서 18%로)\n(인도, 중단하기로 합의했다, 러시아산 원유 구매)\n(트럼프, 통화했다, 모디)\n(인도, 늘리기로 합의했다, 미국산 원유 도입)\n(미국, 부과했다, 인도에 상호관세 25%)\n(모디, 약속했다, 5000억달러 이상 미국산 제품 구매)\n(인도, 구매했다, 러시아산 원유)\n(트럼프, 발표했다, 트루스소셜)\n(미국-인도, 합의했다, 무역 협정)"
+}

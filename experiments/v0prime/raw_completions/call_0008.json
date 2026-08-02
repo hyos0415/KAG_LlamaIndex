@@ -1,0 +1,8 @@
+{
+  "call_index": 8,
+  "model": "claude-sonnet-4-5-20250929",
+  "stop_reason": "end_turn",
+  "input_tokens": 890,
+  "output_tokens": 261,
+  "content_text": "Here are the extracted knowledge triplets:\n\n1. (태백산 눈축제, 발생한 사건, 노점 위생 논란)\n2. (태백산 눈축제, 개최 회차, 제33회)\n3. (태백산 눈축제, 개최 장소, 태백산국립공원)\n4. (노점 운영자, 행위, 막걸리병 어묵탕 투입)\n5. (영상, 조회수, 수백만 회)\n6. (태백시, 조치, 노점 영업중단)\n7. (태백시, 조치, 시설 철거)\n8. (태백시, 발표, 위생 관리 체계 강화)\n9. (태백시민행동, 요구, 시장 사과)\n10. (태백시민행동, 요구, 축제 운영 구조 개편)"
+}

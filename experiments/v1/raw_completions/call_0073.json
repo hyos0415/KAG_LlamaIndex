@@ -1,0 +1,8 @@
+{
+  "call_index": 73,
+  "model": "claude-sonnet-4-5-20250929",
+  "stop_reason": "end_turn",
+  "input_tokens": 650,
+  "output_tokens": 218,
+  "content_text": "Here are the extracted knowledge triplets:\n\n(코스피, 기록, 5288)\n(코스피, 폭등, 338포인트)\n(JP모건, 상향, 코스피 목표치 7500)\n(삼성전자, 관련, 메모리 슈퍼사이클)\n(SK하이닉스, 관련, 메모리 슈퍼사이클)\n(미래에셋증권, 상승, 24.72%)\n(미래에셋금융그룹, 시가총액, 34조원)\n(하나금융지주, 시가총액, 30조6700억원)\n(닛케이225, 상승, 3.92%)\n(닛케이225, 기록, 54720.66)"
+}

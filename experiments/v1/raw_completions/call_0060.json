@@ -1,0 +1,8 @@
+{
+  "call_index": 60,
+  "model": "claude-sonnet-4-5-20250929",
+  "stop_reason": "end_turn",
+  "input_tokens": 827,
+  "output_tokens": 234,
+  "content_text": "Here are the extracted knowledge triplets:\n\n(이재명, is, 대통령)\n(이재명 대통령, 개최, 국무회의)\n(국무회의, 개최 장소, 청와대)\n(국무회의, 개최 날짜, 2026년 2월 3일)\n(다주택자 양도세 중과 유예, 종료 날짜, 5월 9일)\n(구윤철, is, 부총리 겸 재정경제부 장관)\n(이재명 대통령, 발표, 양도세 중과 유예 종료 방침)\n(다주택자, 대상, 양도세 중과)\n(잔금 기간, is, 3~6개월)\n(기사 카테고리, is, 정치/경제)"
+}

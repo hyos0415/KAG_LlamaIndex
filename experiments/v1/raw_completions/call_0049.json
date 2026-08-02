@@ -1,0 +1,8 @@
+{
+  "call_index": 49,
+  "model": "claude-sonnet-4-5-20250929",
+  "stop_reason": "end_turn",
+  "input_tokens": 865,
+  "output_tokens": 299,
+  "content_text": "Here are the knowledge triplets extracted from the text:\n\n(KB증권, 실시, 타사대체 입고 이벤트)\n(KB증권, 제공, 최대 400만원 쿠폰 혜택)\n(이벤트, 진행 기간, 3월 31일까지)\n(이벤트, 대상, 국내주식 타사대체 고객)\n(이벤트, 명칭, KB로 국내주식 옮기고 거래하면 쿠폰이 와르르)\n(이벤트, 대상 고객, 비대면 또는 은행연계 계좌 보유 개인고객)\n(입고 조건, 최소 금액, 1천만원)\n(입고 대상, 포함, 국내주식, ETF, ETN)\n(거래 대상, 포함, 국내주식 및 주식형 ETF, ETN)\n(신청 고객, 즉시 지급, 1만원 상당 쿠폰)"
+}

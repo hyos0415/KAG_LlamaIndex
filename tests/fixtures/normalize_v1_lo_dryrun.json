@@ -1,0 +1,40 @@
+{
+  "graph_path": "experiments/v1/property_graph_store.json",
+  "entity_v2a_lo": {
+    "mode": "lo",
+    "total_entities": 925,
+    "merge_pairs_found": 5,
+    "canonical_short_forms": 5,
+    "absorbed_long_forms": 5,
+    "expected_reduction": 5,
+    "expected_reduction_pct_of_total": 0.54,
+    "sample_pairs": [
+      [
+        "경기도",
+        "경기도의원"
+      ],
+      [
+        "국민의힘",
+        "국민의힘 대표"
+      ],
+      [
+        "무소속",
+        "무소속 의원"
+      ],
+      [
+        "삼성전자",
+        "삼성전자 회장"
+      ],
+      [
+        "이재명",
+        "이재명 대통령"
+      ]
+    ]
+  },
+  "relation_v2b": {
+    "total_types": 460,
+    "estimated_after_stemming": 444,
+    "reduction_count": 16,
+    "reduction_pct": 3.5
+  }
+}

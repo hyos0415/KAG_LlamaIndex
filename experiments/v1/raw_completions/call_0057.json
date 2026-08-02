@@ -1,0 +1,8 @@
+{
+  "call_index": 57,
+  "model": "claude-sonnet-4-5-20250929",
+  "stop_reason": "end_turn",
+  "input_tokens": 1358,
+  "output_tokens": 258,
+  "content_text": "Here are the extracted knowledge triplets:\n\n(삼정KPMG, 개최, 2026 개정세법 설명회)\n(2026 개정세법 설명회, 개최일, 2월 12일)\n(2026 개정세법 설명회, 형식, 웨비나)\n(법인세율, 인상, 1%)\n(연구개발 세액공제, 확대 대상, 신성장·원천기술)\n(통합투자세액공제, 확대 대상, 신성장 사업화시설)\n(영상콘텐츠 제작비용, 확대, 세액공제율)\n(웹툰콘텐츠 제작비용, 신설, 세액공제)\n(고배당 기업, 신설, 배당소득 분리과세)\n(개정세법, 발표, 이재명 정부)"
+}

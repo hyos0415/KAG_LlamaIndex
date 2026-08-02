@@ -1,0 +1,8 @@
+{
+  "call_index": 3,
+  "model": "claude-sonnet-4-5-20250929",
+  "stop_reason": "end_turn",
+  "input_tokens": 1519,
+  "output_tokens": 267,
+  "content_text": "Here are the extracted knowledge triplets:\n\n(세계여성포럼 한국지부, 공동 개최, 글로벌 우먼 서밋)\n(세계여성포럼 한국지부, 협력, 주한 아일랜드 대사관)\n(글로벌 우먼 서밋, 참석자 수, 120여 명)\n(허금주, 직책, 회장)\n(미셸 윈스럽, 직책, 아일랜드 대사)\n(세계여성포럼, 설립 연도, 1974)\n(세계여성포럼, 설립 장소, 뉴욕)\n(세계여성포럼, 회원 수, 8000명 이상)\n(세계여성포럼, 지부 수, 77개)\n(세계여성포럼 한국지부, 창립 연도, 2024년 12월)"
+}

@@ -1,0 +1,8 @@
+{
+  "call_index": 61,
+  "model": "claude-sonnet-4-5-20250929",
+  "stop_reason": "end_turn",
+  "input_tokens": 1419,
+  "output_tokens": 251,
+  "content_text": "Here are the extracted knowledge triplets:\n\n(국내 펀드시장 순자산총액, 기록, 1376조원)\n(국내 펀드시장 순자산총액, 증가율, 25.3%)\n(성장률, 기록 시점, 18년 만에 최대)\n(주식형 펀드, 순자산 증가, 102조5000억원)\n(주식형 펀드, 비중 증가, 17.2%)\n(전체 펀드, 순유입, 168조9000억원)\n(ETF 순자산총액, 기록, 297조1000억원)\n(ETF, 증가율, 71.2%)\n(국내 주식형 펀드 규모, 증가, 125조6000억원)\n(금융투자협회, 발표, 2025년 펀드시장 결산)"
+}

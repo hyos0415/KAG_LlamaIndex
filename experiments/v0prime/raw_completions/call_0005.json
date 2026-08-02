@@ -1,0 +1,8 @@
+{
+  "call_index": 5,
+  "model": "claude-sonnet-4-5-20250929",
+  "stop_reason": "end_turn",
+  "input_tokens": 688,
+  "output_tokens": 203,
+  "content_text": "Here are the extracted knowledge triplets:\n\n(국민의힘, 상태는, 심리적 분당)\n(정성국, 논란 관련, 조광한)\n(정성국, 직위는, 의원)\n(조광한, 직위는, 최고위원)\n(조경태, 소속은, 찬탄파)\n(조경태, 주장, 한동훈 제명 재고)\n(임이자, 가까운 관계, 장 대표)\n(임이자, 주장, 당원게시판 여론조작)\n(한동훈, 이전 직위, 대표)\n(의원총회, 발생 장소, 국민의힘)"
+}

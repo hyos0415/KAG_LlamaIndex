@@ -1,0 +1,22 @@
+{
+  "chunk_count_in": 10,
+  "news_id_count": 5,
+  "cache_enabled": true,
+  "cache_hits": 0,
+  "cache_misses": 10,
+  "elapsed_seconds": 28.0,
+  "num_calls": 10,
+  "model_ids_seen": [
+    "claude-sonnet-4-5-20250929"
+  ],
+  "truncation_method": "stop_reason",
+  "truncated_count": 0,
+  "truncated_ratio": 0.0,
+  "output_tokens": {
+    "min": 192,
+    "max": 261,
+    "mean": 226.9,
+    "median": 231.0,
+    "p90": 245
+  }
+}

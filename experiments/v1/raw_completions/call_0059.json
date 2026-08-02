@@ -1,0 +1,8 @@
+{
+  "call_index": 59,
+  "model": "claude-sonnet-4-5-20250929",
+  "stop_reason": "end_turn",
+  "input_tokens": 745,
+  "output_tokens": 217,
+  "content_text": "Here are the extracted knowledge triplets:\n\n(삼정KPMG, 개최, 2026 개정세법 설명회)\n(2026 개정세법 설명회, 개최일, 2월 12일)\n(법인세율, 인상, 2026년)\n(연구개발 세액공제, 확대, 2026년)\n(고배당 기업 분리과세, 신설, 2026년)\n(고배당 기업 기준연도, is, 2024년)\n(배당성향 기준, is, 40% 이상)\n(가공세금계산서 가산세율, 인상, 2026년)\n(윤학섭, is, 삼정KPMG 세무자문부문 대표)"
+}

@@ -1,0 +1,8 @@
+{
+  "call_index": 39,
+  "model": "claude-sonnet-4-5-20250929",
+  "stop_reason": "end_turn",
+  "input_tokens": 1668,
+  "output_tokens": 226,
+  "content_text": "Here are the extracted knowledge triplets:\n\n(이억원, 발표, 주가조작 신고 포상금 대폭 확대)\n(금융당국, 추진, 불공정거래 근절)\n(한국거래소, 신설, 상장폐지 심사팀)\n(고영호, 소속, 금융위)\n(상장폐지 절차, 단축, 3심에서 2심)\n(상장폐지 심사 기간, 단축, 2년에서 1.5년)\n(정부, 추진, 다산다사 생태계)\n(윤지호, 직업, 경제 평론가)\n(정은보, 직책, 거래소 이사장)\n(코스피, 돌파, 5000)"
+}

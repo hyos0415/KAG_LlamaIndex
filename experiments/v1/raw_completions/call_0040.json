@@ -1,0 +1,8 @@
+{
+  "call_index": 40,
+  "model": "claude-sonnet-4-5-20250929",
+  "stop_reason": "end_turn",
+  "input_tokens": 729,
+  "output_tokens": 237,
+  "content_text": "Here are the extracted knowledge triplets:\n\n(인천대학교 교수, 담합 의혹, 수시전형)\n(인천대학교, 진행 중, 내부 감사)\n(면접, 진행 시기, 2025년 11월)\n(수시전형, 대상 학과, 도시공학과)\n(교수 2명, 담합 행위, 특정 학생 선발)\n(수시전형, 지원자 수, 100명 넘게)\n(수시전형, 선발 인원, 13명)\n(인천대학교, 고발, 녹취록 관련자)\n(녹취록 관련자, 혐의, 통신비밀보호법 위반)\n(인천대학교, 고발 시기, 2026년 1월)"
+}

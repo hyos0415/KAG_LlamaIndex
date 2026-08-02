@@ -1,0 +1,8 @@
+{
+  "call_index": 12,
+  "model": "claude-sonnet-4-5-20250929",
+  "stop_reason": "end_turn",
+  "input_tokens": 1495,
+  "output_tokens": 233,
+  "content_text": "Here are the knowledge triplets extracted from the text:\n\n(중국 해외 유학생, 귀국 증가율, 12%)\n(해외 유학파 구직자, 증가, 전년 대비 12%)\n(중국, 급성장 분야, AI·로봇 산업)\n(석사 학위 소지자, 비중, 80%)\n(2024년 귀국 유학생, 수, 49만5000명)\n(중국 청년 실업률, 기록, 16.5%)\n(영국, 유학 국가 비중, 33.5%)\n(호주, 유학 국가 비중, 21.6%)\n(해외 유학생 귀국 비율, 달성, 86%)\n(미국, 유학 국가 비중, 7.8%)"
+}

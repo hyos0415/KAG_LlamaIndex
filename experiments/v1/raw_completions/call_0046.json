@@ -1,0 +1,8 @@
+{
+  "call_index": 46,
+  "model": "claude-sonnet-4-5-20250929",
+  "stop_reason": "end_turn",
+  "input_tokens": 665,
+  "output_tokens": 201,
+  "content_text": "Here are the knowledge triplets extracted from the text:\n\n(코스피, 상승률, 6.84%)\n(코스피, 기록, 사상 최고치)\n(코스피, 종가, 5288.0)\n(워시 쇼크, 발생일, 전날)\n(삼성전자, 상승률, 두 자릿수)\n(SK하이닉스, 상승률, 두 자릿수)\n(코스피, 최대 지수 상승폭, 338.41)\n(매수 사이드카, 발동, 해당일)\n(기관, 매수, 장 초반)\n(코스피, 장중 최고, 5300선)"
+}

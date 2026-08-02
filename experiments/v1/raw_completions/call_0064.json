@@ -1,0 +1,8 @@
+{
+  "call_index": 64,
+  "model": "claude-sonnet-4-5-20250929",
+  "stop_reason": "end_turn",
+  "input_tokens": 720,
+  "output_tokens": 224,
+  "content_text": "Here are the knowledge triplets extracted from the text:\n\n(이재명, is, 대통령)\n(이재명 대통령, 재확인, 다주택자 양도세 중과 유예 종료 방침)\n(다주택자 양도세 중과 유예, 종료일, 5월 9일)\n(이재명 대통령, 주문, 공정거래위원회 전속고발권 폐지)\n(이재명 대통령, 경고 보냄, 다주택자)\n(이재명 대통령, 발언 플랫폼, 엑스)\n(이재명 대통령, 언급, 마지막 탈출 기회)\n(이재명 대통령, 발언 장소, 국무회의)"
+}
