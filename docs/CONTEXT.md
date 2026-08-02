@@ -712,4 +712,9 @@ Is · Died in · Died from · Member of · Spouse of · Married · Divorced in
 **작성 예정**:
 - `docs/found-issues.md` — 범위 밖 발견 사항
 
+**히스토리 재작성 백업 (2026-08-02, 로컬 전용, 저장소에 포함되지 않음)**:
+- 로컬 브랜치 `backup-pre-rewrite` — 재작성 직전 main 전체(f8e5b94)
+- 외부 번들 `~/Desktop/mk_news/news-arena-backup-pre-rewrite-20260802.bundle` — 재작성 전 전체 저장소(16개 ref 포함)
+- 삭제 조건: 푸시가 정상 반영되고 1주일(2026-08-09까지) 문제가 없으면 삭제한다. 그 전까지는 유지.
+
 `design-review.md`에는 §5의 설계 반복 기록을 반드시 포함하세요. 실험 결과와 별개로 보여줄 것이 있습니다.
