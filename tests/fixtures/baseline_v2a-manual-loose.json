@@ -1,0 +1,25 @@
+{
+  "n_docs": 40,
+  "n_chunks": 86,
+  "n_entities": 921,
+  "n_relations": 773,
+  "n_components": 221,
+  "components_per_doc": 5.525,
+  "entities_per_doc": 23.025,
+  "n_bridges": 44,
+  "bridges_per_doc": 1.1,
+  "rel_type_ratio": 0.5951,
+  "n_rel_types": 460,
+  "isolated_doc_ratio": 0.2,
+  "isolated_docs": [
+    "11943664",
+    "11943667",
+    "11951828",
+    "11951847",
+    "11951849",
+    "11951899",
+    "11952002",
+    "11952014"
+  ],
+  "measured_at": "2026-08-02"
+}
