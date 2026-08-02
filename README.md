@@ -9,7 +9,8 @@
 
 이 프로젝트는 완성 후 지식그래프 도입 근거를 사후 검증했다. 4층 소거로 조각화 원인을 좁혔으며, 결과와 한계를 `docs/design-review.md`에 정리했다. 주요 발견: 문서 규모 확대(5→40건)로는 개선되지 않았고, 후처리 정규화도 효과가 없었다. 원인은 추출 방식으로 좁혀지나 코퍼스 구성과 분리되지 않아 "추정"으로 남긴다.
 
-모든 수치는 `python scripts/verify_metrics.py` 로 재계산·검증할 수 있다. 데이터 포함 범위는 `docs/DATA.md` 참고.
+수치 검증: `python scripts/verify_metrics.py`
+8개 지표 중 7개가 baseline 과 완전 일치한다. cross_doc_path_ratio 만 0.45% 오차가 있으며, 원 계산 스크립트가 커밋되지 않아 발생한 재현 한계다(CONTEXT.md 발견 20). 이 오차는 어떤 판정 구간도 넘지 않는다. 데이터 포함 범위는 `docs/DATA.md` 참고.
 
 ---
 

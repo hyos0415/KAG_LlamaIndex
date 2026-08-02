@@ -26,13 +26,8 @@ python scripts/verify_metrics.py --graph experiments/v1/graph_public.json \
     --baseline tests/fixtures/baseline_v1.json --section full_40
 ```
 
-`docs/design-review.md` 의 모든 수치를 `graph_public.json` 에서 재계산하고
-`baseline_v*.json` 과 대조한다. `cross_doc_path_ratio`/`cross_doc_pairs` 한 항목만
-0.45% 오차 범위 내에서 근사 일치한다 — 원 계산 스크립트가 한 번도 커밋되지 않아
-정확한 재현이 불가능하기 때문이며, 이 지표는 CONTEXT.md §6에서 이미 "조합론적
-인플레이션으로 규모 효과 지표로 부적합"이라고 정정된 항목이라 §4 결론에 영향을
-주지 않는다. 그 외 모든 지표(엔티티/관계/컴포넌트 수, `entities_per_doc`,
-`components_per_doc`, `rel_type_ratio`, `isolated_doc_ratio` 등)는 완전히 일치한다.
+수치 검증: `python scripts/verify_metrics.py`
+8개 지표 중 7개가 baseline 과 완전 일치한다. cross_doc_path_ratio 만 0.45% 오차가 있으며, 원 계산 스크립트가 커밋되지 않아 발생한 재현 한계다(CONTEXT.md 발견 20). 이 오차는 어떤 판정 구간도 넘지 않는다.
 
 ## 재현 범위
 
