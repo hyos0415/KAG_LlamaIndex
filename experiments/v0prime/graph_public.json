@@ -1,0 +1,3860 @@
+{
+  "nodes": {
+    "11951990-chunk0": {
+      "label": "text_chunk",
+      "embedding": null,
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "_node_type": "TextNode",
+        "document_id": "None",
+        "doc_id": "None",
+        "ref_doc_id": "None"
+      },
+      "text": "",
+      "id_": "11951990-chunk0"
+    },
+    "11951990-chunk1": {
+      "label": "text_chunk",
+      "embedding": null,
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "_node_type": "TextNode",
+        "document_id": "None",
+        "doc_id": "None",
+        "ref_doc_id": "None"
+      },
+      "text": "",
+      "id_": "11951990-chunk1"
+    },
+    "11951999-chunk0": {
+      "label": "text_chunk",
+      "embedding": null,
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "_node_type": "TextNode",
+        "document_id": "None",
+        "doc_id": "None",
+        "ref_doc_id": "None"
+      },
+      "text": "",
+      "id_": "11951999-chunk0"
+    },
+    "11951999-chunk1": {
+      "label": "text_chunk",
+      "embedding": null,
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "_node_type": "TextNode",
+        "document_id": "None",
+        "doc_id": "None",
+        "ref_doc_id": "None"
+      },
+      "text": "",
+      "id_": "11951999-chunk1"
+    },
+    "11952002-chunk0": {
+      "label": "text_chunk",
+      "embedding": null,
+      "properties": {
+        "title": "“故서희원 잊히지 않길”…눈물만 흘리던 구준엽 꺼낸 한 마디",
+        "url": "https://www.mk.co.kr/news/culture/11952002",
+        "pub_date": "Tue, 03 Feb 2026 22:27:22 +09:00",
+        "news_id": "11952002",
+        "category": "연예",
+        "sentiment": "부정",
+        "keywords": "구준엽, 서희원, 급성폐렴, 셀럽병사의 비밀, 재혼",
+        "_node_type": "TextNode",
+        "document_id": "None",
+        "doc_id": "None",
+        "ref_doc_id": "None"
+      },
+      "text": "",
+      "id_": "11952002-chunk0"
+    },
+    "11952002-chunk1": {
+      "label": "text_chunk",
+      "embedding": null,
+      "properties": {
+        "title": "“故서희원 잊히지 않길”…눈물만 흘리던 구준엽 꺼낸 한 마디",
+        "url": "https://www.mk.co.kr/news/culture/11952002",
+        "pub_date": "Tue, 03 Feb 2026 22:27:22 +09:00",
+        "news_id": "11952002",
+        "category": "연예",
+        "sentiment": "부정",
+        "keywords": "구준엽, 서희원, 급성폐렴, 셀럽병사의 비밀, 재혼",
+        "_node_type": "TextNode",
+        "document_id": "None",
+        "doc_id": "None",
+        "ref_doc_id": "None"
+      },
+      "text": "",
+      "id_": "11952002-chunk1"
+    },
+    "11952014-chunk0": {
+      "label": "text_chunk",
+      "embedding": null,
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "_node_type": "TextNode",
+        "document_id": "None",
+        "doc_id": "None",
+        "ref_doc_id": "None"
+      },
+      "text": "",
+      "id_": "11952014-chunk0"
+    },
+    "11952014-chunk1": {
+      "label": "text_chunk",
+      "embedding": null,
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "_node_type": "TextNode",
+        "document_id": "None",
+        "doc_id": "None",
+        "ref_doc_id": "None"
+      },
+      "text": "",
+      "id_": "11952014-chunk1"
+    },
+    "11952015-chunk0": {
+      "label": "text_chunk",
+      "embedding": null,
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "_node_type": "TextNode",
+        "document_id": "None",
+        "doc_id": "None",
+        "ref_doc_id": "None"
+      },
+      "text": "",
+      "id_": "11952015-chunk0"
+    },
+    "11952015-chunk1": {
+      "label": "text_chunk",
+      "embedding": null,
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "_node_type": "TextNode",
+        "document_id": "None",
+        "doc_id": "None",
+        "ref_doc_id": "None"
+      },
+      "text": "",
+      "id_": "11952015-chunk1"
+    },
+    "이재명": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk1"
+      },
+      "name": "이재명"
+    },
+    "대통령": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk1"
+      },
+      "name": "대통령"
+    },
+    "이재명 대통령": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "triplet_source_id": "11952015-chunk1"
+      },
+      "name": "이재명 대통령"
+    },
+    "부동산 이슈": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk0"
+      },
+      "name": "부동산 이슈"
+    },
+    "정부": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk1"
+      },
+      "name": "정부"
+    },
+    "1·29 공급대책": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk0"
+      },
+      "name": "1·29 공급대책"
+    },
+    "국토교통위원회 국토법안심사소위": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk0"
+      },
+      "name": "국토교통위원회 국토법안심사소위"
+    },
+    "2025년 12월 9일": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk0"
+      },
+      "name": "2025년 12월 9일"
+    },
+    "정부·여당": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk0"
+      },
+      "name": "정부·여당"
+    },
+    "용적률 1.3배 허용": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk0"
+      },
+      "name": "용적률 1.3배 허용"
+    },
+    "야당": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk0"
+      },
+      "name": "야당"
+    },
+    "민간 정비사업 혜택": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk0"
+      },
+      "name": "민간 정비사업 혜택"
+    },
+    "국민의힘": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk1"
+      },
+      "name": "국민의힘"
+    },
+    "용적률 1.2배 완화": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk0"
+      },
+      "name": "용적률 1.2배 완화"
+    },
+    "재건축초과이익 환수제도 폐지": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk0"
+      },
+      "name": "재건축초과이익 환수제도 폐지"
+    },
+    "서울 아파트 매매가격": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk0"
+      },
+      "name": "서울 아파트 매매가격"
+    },
+    "0.31%": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk0"
+      },
+      "name": "0.31%"
+    },
+    "국회 입법": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk0"
+      },
+      "name": "국회 입법"
+    },
+    "지연": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk0"
+      },
+      "name": "지연"
+    },
+    "국토위 법안소위": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk1"
+      },
+      "name": "국토위 법안소위"
+    },
+    "2025년 12월": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk1"
+      },
+      "name": "2025년 12월"
+    },
+    "9·7 대책": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk1"
+      },
+      "name": "9·7 대책"
+    },
+    "용적률 상향": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk1"
+      },
+      "name": "용적률 상향"
+    },
+    "정비사업 인허가 간소화": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk1"
+      },
+      "name": "정비사업 인허가 간소화"
+    },
+    "재개발 조합 설립 동의율": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk1"
+      },
+      "name": "재개발 조합 설립 동의율"
+    },
+    "75%": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk1"
+      },
+      "name": "75%"
+    },
+    "70%": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk1"
+      },
+      "name": "70%"
+    },
+    "공공주택특별법": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk1"
+      },
+      "name": "공공주택특별법"
+    },
+    "국회 국토위": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk1"
+      },
+      "name": "국회 국토위"
+    },
+    "토지보상법": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk1"
+      },
+      "name": "토지보상법"
+    },
+    "1·29 대책": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk1"
+      },
+      "name": "1·29 대책"
+    },
+    "2026년 1월 29일": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk1"
+      },
+      "name": "2026년 1월 29일"
+    },
+    "노후청사특별법": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk1"
+      },
+      "name": "노후청사특별법"
+    },
+    "당내 분열": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk0"
+      },
+      "name": "당내 분열"
+    },
+    "한동훈": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk1"
+      },
+      "name": "한동훈"
+    },
+    "전 대표": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk0"
+      },
+      "name": "전 대표"
+    },
+    "정성국": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk1"
+      },
+      "name": "정성국"
+    },
+    "의원": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk1"
+      },
+      "name": "의원"
+    },
+    "조광한": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk1"
+      },
+      "name": "조광한"
+    },
+    "최고위원": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk1"
+      },
+      "name": "최고위원"
+    },
+    "원외 당협위원장협의회": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk0"
+      },
+      "name": "원외 당협위원장협의회"
+    },
+    "정성국 의원직 사퇴": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk0"
+      },
+      "name": "정성국 의원직 사퇴"
+    },
+    "장동혁": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk0"
+      },
+      "name": "장동혁"
+    },
+    "의원총회": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk1"
+      },
+      "name": "의원총회"
+    },
+    "전날": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk0"
+      },
+      "name": "전날"
+    },
+    "원외 당협위원장 78명": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk0"
+      },
+      "name": "원외 당협위원장 78명"
+    },
+    "규탄 성명": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk0"
+      },
+      "name": "규탄 성명"
+    },
+    "당권파": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk0"
+      },
+      "name": "당권파"
+    },
+    "친한계": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk0"
+      },
+      "name": "친한계"
+    },
+    "심리적 분당": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk1"
+      },
+      "name": "심리적 분당"
+    },
+    "조경태": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk1"
+      },
+      "name": "조경태"
+    },
+    "찬탄파": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk1"
+      },
+      "name": "찬탄파"
+    },
+    "한동훈 제명 재고": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk1"
+      },
+      "name": "한동훈 제명 재고"
+    },
+    "임이자": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk1"
+      },
+      "name": "임이자"
+    },
+    "장 대표": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk1"
+      },
+      "name": "장 대표"
+    },
+    "당원게시판 여론조작": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk1"
+      },
+      "name": "당원게시판 여론조작"
+    },
+    "대표": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk1"
+      },
+      "name": "대표"
+    },
+    "구준엽": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“故서희원 잊히지 않길”…눈물만 흘리던 구준엽 꺼낸 한 마디",
+        "url": "https://www.mk.co.kr/news/culture/11952002",
+        "pub_date": "Tue, 03 Feb 2026 22:27:22 +09:00",
+        "news_id": "11952002",
+        "category": "연예",
+        "sentiment": "부정",
+        "keywords": "구준엽, 서희원, 급성폐렴, 셀럽병사의 비밀, 재혼",
+        "triplet_source_id": "11952002-chunk1"
+      },
+      "name": "구준엽"
+    },
+    "클론": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“故서희원 잊히지 않길”…눈물만 흘리던 구준엽 꺼낸 한 마디",
+        "url": "https://www.mk.co.kr/news/culture/11952002",
+        "pub_date": "Tue, 03 Feb 2026 22:27:22 +09:00",
+        "news_id": "11952002",
+        "category": "연예",
+        "sentiment": "부정",
+        "keywords": "구준엽, 서희원, 급성폐렴, 셀럽병사의 비밀, 재혼",
+        "triplet_source_id": "11952002-chunk0"
+      },
+      "name": "클론"
+    },
+    "서희원": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“故서희원 잊히지 않길”…눈물만 흘리던 구준엽 꺼낸 한 마디",
+        "url": "https://www.mk.co.kr/news/culture/11952002",
+        "pub_date": "Tue, 03 Feb 2026 22:27:22 +09:00",
+        "news_id": "11952002",
+        "category": "연예",
+        "sentiment": "부정",
+        "keywords": "구준엽, 서희원, 급성폐렴, 셀럽병사의 비밀, 재혼",
+        "triplet_source_id": "11952002-chunk1"
+      },
+      "name": "서희원"
+    },
+    "급성폐렴": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“故서희원 잊히지 않길”…눈물만 흘리던 구준엽 꺼낸 한 마디",
+        "url": "https://www.mk.co.kr/news/culture/11952002",
+        "pub_date": "Tue, 03 Feb 2026 22:27:22 +09:00",
+        "news_id": "11952002",
+        "category": "연예",
+        "sentiment": "부정",
+        "keywords": "구준엽, 서희원, 급성폐렴, 셀럽병사의 비밀, 재혼",
+        "triplet_source_id": "11952002-chunk1"
+      },
+      "name": "급성폐렴"
+    },
+    "왕소비": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“故서희원 잊히지 않길”…눈물만 흘리던 구준엽 꺼낸 한 마디",
+        "url": "https://www.mk.co.kr/news/culture/11952002",
+        "pub_date": "Tue, 03 Feb 2026 22:27:22 +09:00",
+        "news_id": "11952002",
+        "category": "연예",
+        "sentiment": "부정",
+        "keywords": "구준엽, 서희원, 급성폐렴, 셀럽병사의 비밀, 재혼",
+        "triplet_source_id": "11952002-chunk0"
+      },
+      "name": "왕소비"
+    },
+    "2021": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“故서희원 잊히지 않길”…눈물만 흘리던 구준엽 꺼낸 한 마디",
+        "url": "https://www.mk.co.kr/news/culture/11952002",
+        "pub_date": "Tue, 03 Feb 2026 22:27:22 +09:00",
+        "news_id": "11952002",
+        "category": "연예",
+        "sentiment": "부정",
+        "keywords": "구준엽, 서희원, 급성폐렴, 셀럽병사의 비밀, 재혼",
+        "triplet_source_id": "11952002-chunk0"
+      },
+      "name": "2021"
+    },
+    "2025년 2월": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“故서희원 잊히지 않길”…눈물만 흘리던 구준엽 꺼낸 한 마디",
+        "url": "https://www.mk.co.kr/news/culture/11952002",
+        "pub_date": "Tue, 03 Feb 2026 22:27:22 +09:00",
+        "news_id": "11952002",
+        "category": "연예",
+        "sentiment": "부정",
+        "keywords": "구준엽, 서희원, 급성폐렴, 셀럽병사의 비밀, 재혼",
+        "triplet_source_id": "11952002-chunk0"
+      },
+      "name": "2025년 2월"
+    },
+    "일본": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“故서희원 잊히지 않길”…눈물만 흘리던 구준엽 꺼낸 한 마디",
+        "url": "https://www.mk.co.kr/news/culture/11952002",
+        "pub_date": "Tue, 03 Feb 2026 22:27:22 +09:00",
+        "news_id": "11952002",
+        "category": "연예",
+        "sentiment": "부정",
+        "keywords": "구준엽, 서희원, 급성폐렴, 셀럽병사의 비밀, 재혼",
+        "triplet_source_id": "11952002-chunk1"
+      },
+      "name": "일본"
+    },
+    "셀럽병사의 비밀": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“故서희원 잊히지 않길”…눈물만 흘리던 구준엽 꺼낸 한 마디",
+        "url": "https://www.mk.co.kr/news/culture/11952002",
+        "pub_date": "Tue, 03 Feb 2026 22:27:22 +09:00",
+        "news_id": "11952002",
+        "category": "연예",
+        "sentiment": "부정",
+        "keywords": "구준엽, 서희원, 급성폐렴, 셀럽병사의 비밀, 재혼",
+        "triplet_source_id": "11952002-chunk1"
+      },
+      "name": "셀럽병사의 비밀"
+    },
+    "심장 승모판 일탈증": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“故서희원 잊히지 않길”…눈물만 흘리던 구준엽 꺼낸 한 마디",
+        "url": "https://www.mk.co.kr/news/culture/11952002",
+        "pub_date": "Tue, 03 Feb 2026 22:27:22 +09:00",
+        "news_id": "11952002",
+        "category": "연예",
+        "sentiment": "부정",
+        "keywords": "구준엽, 서희원, 급성폐렴, 셀럽병사의 비밀, 재혼",
+        "triplet_source_id": "11952002-chunk1"
+      },
+      "name": "심장 승모판 일탈증"
+    },
+    "서희원 묘역": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“故서희원 잊히지 않길”…눈물만 흘리던 구준엽 꺼낸 한 마디",
+        "url": "https://www.mk.co.kr/news/culture/11952002",
+        "pub_date": "Tue, 03 Feb 2026 22:27:22 +09:00",
+        "news_id": "11952002",
+        "category": "연예",
+        "sentiment": "부정",
+        "keywords": "구준엽, 서희원, 급성폐렴, 셀럽병사의 비밀, 재혼",
+        "triplet_source_id": "11952002-chunk1"
+      },
+      "name": "서희원 묘역"
+    },
+    "대만 금보산": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“故서희원 잊히지 않길”…눈물만 흘리던 구준엽 꺼낸 한 마디",
+        "url": "https://www.mk.co.kr/news/culture/11952002",
+        "pub_date": "Tue, 03 Feb 2026 22:27:22 +09:00",
+        "news_id": "11952002",
+        "category": "연예",
+        "sentiment": "부정",
+        "keywords": "구준엽, 서희원, 급성폐렴, 셀럽병사의 비밀, 재혼",
+        "triplet_source_id": "11952002-chunk1"
+      },
+      "name": "대만 금보산"
+    },
+    "20여년 만": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“故서희원 잊히지 않길”…눈물만 흘리던 구준엽 꺼낸 한 마디",
+        "url": "https://www.mk.co.kr/news/culture/11952002",
+        "pub_date": "Tue, 03 Feb 2026 22:27:22 +09:00",
+        "news_id": "11952002",
+        "category": "연예",
+        "sentiment": "부정",
+        "keywords": "구준엽, 서희원, 급성폐렴, 셀럽병사의 비밀, 재혼",
+        "triplet_source_id": "11952002-chunk1"
+      },
+      "name": "20여년 만"
+    },
+    "1년": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“故서희원 잊히지 않길”…눈물만 흘리던 구준엽 꺼낸 한 마디",
+        "url": "https://www.mk.co.kr/news/culture/11952002",
+        "pub_date": "Tue, 03 Feb 2026 22:27:22 +09:00",
+        "news_id": "11952002",
+        "category": "연예",
+        "sentiment": "부정",
+        "keywords": "구준엽, 서희원, 급성폐렴, 셀럽병사의 비밀, 재혼",
+        "triplet_source_id": "11952002-chunk1"
+      },
+      "name": "1년"
+    },
+    "폐렴": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“故서희원 잊히지 않길”…눈물만 흘리던 구준엽 꺼낸 한 마디",
+        "url": "https://www.mk.co.kr/news/culture/11952002",
+        "pub_date": "Tue, 03 Feb 2026 22:27:22 +09:00",
+        "news_id": "11952002",
+        "category": "연예",
+        "sentiment": "부정",
+        "keywords": "구준엽, 서희원, 급성폐렴, 셀럽병사의 비밀, 재혼",
+        "triplet_source_id": "11952002-chunk1"
+      },
+      "name": "폐렴"
+    },
+    "심장 부담 급증": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“故서희원 잊히지 않길”…눈물만 흘리던 구준엽 꺼낸 한 마디",
+        "url": "https://www.mk.co.kr/news/culture/11952002",
+        "pub_date": "Tue, 03 Feb 2026 22:27:22 +09:00",
+        "news_id": "11952002",
+        "category": "연예",
+        "sentiment": "부정",
+        "keywords": "구준엽, 서희원, 급성폐렴, 셀럽병사의 비밀, 재혼",
+        "triplet_source_id": "11952002-chunk1"
+      },
+      "name": "심장 부담 급증"
+    },
+    "태백산 눈축제": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "triplet_source_id": "11952014-chunk1"
+      },
+      "name": "태백산 눈축제"
+    },
+    "노점 위생 논란": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "triplet_source_id": "11952014-chunk1"
+      },
+      "name": "노점 위생 논란"
+    },
+    "제33회": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "triplet_source_id": "11952014-chunk0"
+      },
+      "name": "제33회"
+    },
+    "태백산국립공원": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "triplet_source_id": "11952014-chunk0"
+      },
+      "name": "태백산국립공원"
+    },
+    "노점 운영자": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "triplet_source_id": "11952014-chunk0"
+      },
+      "name": "노점 운영자"
+    },
+    "막걸리병 어묵탕 투입": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "triplet_source_id": "11952014-chunk1"
+      },
+      "name": "막걸리병 어묵탕 투입"
+    },
+    "영상": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "triplet_source_id": "11952014-chunk0"
+      },
+      "name": "영상"
+    },
+    "수백만 회": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "triplet_source_id": "11952014-chunk0"
+      },
+      "name": "수백만 회"
+    },
+    "태백시": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "triplet_source_id": "11952014-chunk1"
+      },
+      "name": "태백시"
+    },
+    "노점 영업중단": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "triplet_source_id": "11952014-chunk1"
+      },
+      "name": "노점 영업중단"
+    },
+    "시설 철거": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "triplet_source_id": "11952014-chunk0"
+      },
+      "name": "시설 철거"
+    },
+    "위생 관리 체계 강화": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "triplet_source_id": "11952014-chunk0"
+      },
+      "name": "위생 관리 체계 강화"
+    },
+    "태백시민행동": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "triplet_source_id": "11952014-chunk0"
+      },
+      "name": "태백시민행동"
+    },
+    "시장 사과": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "triplet_source_id": "11952014-chunk1"
+      },
+      "name": "시장 사과"
+    },
+    "축제 운영 구조 개편": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "triplet_source_id": "11952014-chunk1"
+      },
+      "name": "축제 운영 구조 개편"
+    },
+    "노점": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "triplet_source_id": "11952014-chunk1"
+      },
+      "name": "노점"
+    },
+    "사과": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "triplet_source_id": "11952014-chunk1"
+      },
+      "name": "사과"
+    },
+    "시민단체": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "triplet_source_id": "11952014-chunk1"
+      },
+      "name": "시민단체"
+    },
+    "시민주도 축제위원회 구성": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "triplet_source_id": "11952014-chunk1"
+      },
+      "name": "시민주도 축제위원회 구성"
+    },
+    "1월 31일": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "triplet_source_id": "11952014-chunk1"
+      },
+      "name": "1월 31일"
+    },
+    "겨울 체험 프로그램": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "triplet_source_id": "11952014-chunk1"
+      },
+      "name": "겨울 체험 프로그램"
+    },
+    "눈꽃 등반대회": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "triplet_source_id": "11952014-chunk1"
+      },
+      "name": "눈꽃 등반대회"
+    },
+    "2월 7일": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "triplet_source_id": "11952014-chunk1"
+      },
+      "name": "2월 7일"
+    },
+    "Spc삼립 시화공장": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "triplet_source_id": "11952015-chunk1"
+      },
+      "name": "Spc삼립 시화공장"
+    },
+    "2026년 2월 3일": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "triplet_source_id": "11952015-chunk0"
+      },
+      "name": "2026년 2월 3일"
+    },
+    "화재": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "triplet_source_id": "11952015-chunk1"
+      },
+      "name": "화재"
+    },
+    "시흥시 정왕동": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "triplet_source_id": "11952015-chunk0"
+      },
+      "name": "시흥시 정왕동"
+    },
+    "3명": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "triplet_source_id": "11952015-chunk0"
+      },
+      "name": "3명"
+    },
+    "2025년 7월": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "triplet_source_id": "11952015-chunk0"
+      },
+      "name": "2025년 7월"
+    },
+    "4시간": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "triplet_source_id": "11952015-chunk1"
+      },
+      "name": "4시간"
+    },
+    "소방당국": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "triplet_source_id": "11952015-chunk1"
+      },
+      "name": "소방당국"
+    },
+    "130여명": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "triplet_source_id": "11952015-chunk0"
+      },
+      "name": "130여명"
+    },
+    "작업자": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "triplet_source_id": "11952015-chunk0"
+      },
+      "name": "작업자"
+    },
+    "12명": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "triplet_source_id": "11952015-chunk0"
+      },
+      "name": "12명"
+    },
+    "3층 식빵 생산라인": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "triplet_source_id": "11952015-chunk0"
+      },
+      "name": "3층 식빵 생산라인"
+    },
+    "대응 1단계": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "triplet_source_id": "11952015-chunk0"
+      },
+      "name": "대응 1단계"
+    },
+    "안전문제": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "triplet_source_id": "11952015-chunk1"
+      },
+      "name": "안전문제"
+    },
+    "작업자 3명": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "triplet_source_id": "11952015-chunk1"
+      },
+      "name": "작업자 3명"
+    },
+    "부상": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "triplet_source_id": "11952015-chunk1"
+      },
+      "name": "부상"
+    },
+    "50대 근로자": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "triplet_source_id": "11952015-chunk1"
+      },
+      "name": "50대 근로자"
+    },
+    "기계 사고": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "triplet_source_id": "11952015-chunk1"
+      },
+      "name": "기계 사고"
+    },
+    "경찰": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "triplet_source_id": "11952015-chunk1"
+      },
+      "name": "경찰"
+    },
+    "화재 원인": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "triplet_source_id": "11952015-chunk1"
+      },
+      "name": "화재 원인"
+    },
+    "근로자": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "triplet_source_id": "11952015-chunk1"
+      },
+      "name": "근로자"
+    },
+    "폭발음": {
+      "label": "entity",
+      "embedding": null,
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "triplet_source_id": "11952015-chunk1"
+      },
+      "name": "폭발음"
+    }
+  },
+  "relations": {
+    "이재명_Is_대통령": {
+      "label": "Is",
+      "source_id": "이재명",
+      "target_id": "대통령",
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk0"
+      }
+    },
+    "이재명 대통령_언급_부동산 이슈": {
+      "label": "언급",
+      "source_id": "이재명 대통령",
+      "target_id": "부동산 이슈",
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk0"
+      }
+    },
+    "정부_발표_1·29 공급대책": {
+      "label": "발표",
+      "source_id": "정부",
+      "target_id": "1·29 공급대책",
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk0"
+      }
+    },
+    "국토교통위원회 국토법안심사소위_마지막 회의_2025년 12월 9일": {
+      "label": "마지막 회의",
+      "source_id": "국토교통위원회 국토법안심사소위",
+      "target_id": "2025년 12월 9일",
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk0"
+      }
+    },
+    "정부·여당_제안_용적률 1.3배 허용": {
+      "label": "제안",
+      "source_id": "정부·여당",
+      "target_id": "용적률 1.3배 허용",
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk0"
+      }
+    },
+    "야당_요구_민간 정비사업 혜택": {
+      "label": "요구",
+      "source_id": "야당",
+      "target_id": "민간 정비사업 혜택",
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk0"
+      }
+    },
+    "국민의힘_주장_용적률 1.2배 완화": {
+      "label": "주장",
+      "source_id": "국민의힘",
+      "target_id": "용적률 1.2배 완화",
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk0"
+      }
+    },
+    "국민의힘_주장_재건축초과이익 환수제도 폐지": {
+      "label": "주장",
+      "source_id": "국민의힘",
+      "target_id": "재건축초과이익 환수제도 폐지",
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk0"
+      }
+    },
+    "서울 아파트 매매가격_상승_0.31%": {
+      "label": "상승",
+      "source_id": "서울 아파트 매매가격",
+      "target_id": "0.31%",
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk0"
+      }
+    },
+    "국회 입법_상태_지연": {
+      "label": "상태",
+      "source_id": "국회 입법",
+      "target_id": "지연",
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk0"
+      }
+    },
+    "국토위 법안소위_휴업 시작_2025년 12월": {
+      "label": "휴업 시작",
+      "source_id": "국토위 법안소위",
+      "target_id": "2025년 12월",
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk1"
+      }
+    },
+    "9·7 대책_포함_용적률 상향": {
+      "label": "포함",
+      "source_id": "9·7 대책",
+      "target_id": "용적률 상향",
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk1"
+      }
+    },
+    "9·7 대책_포함_정비사업 인허가 간소화": {
+      "label": "포함",
+      "source_id": "9·7 대책",
+      "target_id": "정비사업 인허가 간소화",
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk1"
+      }
+    },
+    "재개발 조합 설립 동의율_조정 from_75%": {
+      "label": "조정 from",
+      "source_id": "재개발 조합 설립 동의율",
+      "target_id": "75%",
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk1"
+      }
+    },
+    "재개발 조합 설립 동의율_조정 to_70%": {
+      "label": "조정 to",
+      "source_id": "재개발 조합 설립 동의율",
+      "target_id": "70%",
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk1"
+      }
+    },
+    "공공주택특별법_계류 중_국회 국토위": {
+      "label": "계류 중",
+      "source_id": "공공주택특별법",
+      "target_id": "국회 국토위",
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk1"
+      }
+    },
+    "토지보상법_계류 중_국회 국토위": {
+      "label": "계류 중",
+      "source_id": "토지보상법",
+      "target_id": "국회 국토위",
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk1"
+      }
+    },
+    "1·29 대책_발표일_2026년 1월 29일": {
+      "label": "발표일",
+      "source_id": "1·29 대책",
+      "target_id": "2026년 1월 29일",
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk1"
+      }
+    },
+    "노후청사특별법_추진 주체_정부": {
+      "label": "추진 주체",
+      "source_id": "노후청사특별법",
+      "target_id": "정부",
+      "properties": {
+        "title": "빠른 주택공급 국회서 공회전…‘정책심사’ 국토위 소위 2달째 휴업",
+        "url": "https://www.mk.co.kr/news/realestate/11951990",
+        "pub_date": "Tue, 03 Feb 2026 22:13:16 +09:00",
+        "news_id": "11951990",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "부동산 정책, 국회 입법 지연, 정비사업, 여야 갈등, 용적률 완화",
+        "triplet_source_id": "11951990-chunk1"
+      }
+    },
+    "국민의힘_경험하고 있다_당내 분열": {
+      "label": "경험하고 있다",
+      "source_id": "국민의힘",
+      "target_id": "당내 분열",
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk0"
+      }
+    },
+    "한동훈_직위_전 대표": {
+      "label": "직위",
+      "source_id": "한동훈",
+      "target_id": "전 대표",
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk0"
+      }
+    },
+    "정성국_직위_의원": {
+      "label": "직위",
+      "source_id": "정성국",
+      "target_id": "의원",
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk0"
+      }
+    },
+    "조광한_직위_최고위원": {
+      "label": "직위",
+      "source_id": "조광한",
+      "target_id": "최고위원",
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk0"
+      }
+    },
+    "원외 당협위원장협의회_촉구했다_정성국 의원직 사퇴": {
+      "label": "촉구했다",
+      "source_id": "원외 당협위원장협의회",
+      "target_id": "정성국 의원직 사퇴",
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk0"
+      }
+    },
+    "조광한_지명자_장동혁": {
+      "label": "지명자",
+      "source_id": "조광한",
+      "target_id": "장동혁",
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk0"
+      }
+    },
+    "정성국_발언했다_의원총회": {
+      "label": "발언했다",
+      "source_id": "정성국",
+      "target_id": "의원총회",
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk0"
+      }
+    },
+    "의원총회_발생 날짜_전날": {
+      "label": "발생 날짜",
+      "source_id": "의원총회",
+      "target_id": "전날",
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk0"
+      }
+    },
+    "원외 당협위원장 78명_참여했다_규탄 성명": {
+      "label": "참여했다",
+      "source_id": "원외 당협위원장 78명",
+      "target_id": "규탄 성명",
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk0"
+      }
+    },
+    "당권파_대립하고 있다_친한계": {
+      "label": "대립하고 있다",
+      "source_id": "당권파",
+      "target_id": "친한계",
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk0"
+      }
+    },
+    "국민의힘_상태는_심리적 분당": {
+      "label": "상태는",
+      "source_id": "국민의힘",
+      "target_id": "심리적 분당",
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk1"
+      }
+    },
+    "정성국_논란 관련_조광한": {
+      "label": "논란 관련",
+      "source_id": "정성국",
+      "target_id": "조광한",
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk1"
+      }
+    },
+    "정성국_직위는_의원": {
+      "label": "직위는",
+      "source_id": "정성국",
+      "target_id": "의원",
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk1"
+      }
+    },
+    "조광한_직위는_최고위원": {
+      "label": "직위는",
+      "source_id": "조광한",
+      "target_id": "최고위원",
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk1"
+      }
+    },
+    "조경태_소속은_찬탄파": {
+      "label": "소속은",
+      "source_id": "조경태",
+      "target_id": "찬탄파",
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk1"
+      }
+    },
+    "조경태_주장_한동훈 제명 재고": {
+      "label": "주장",
+      "source_id": "조경태",
+      "target_id": "한동훈 제명 재고",
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk1"
+      }
+    },
+    "임이자_가까운 관계_장 대표": {
+      "label": "가까운 관계",
+      "source_id": "임이자",
+      "target_id": "장 대표",
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk1"
+      }
+    },
+    "임이자_주장_당원게시판 여론조작": {
+      "label": "주장",
+      "source_id": "임이자",
+      "target_id": "당원게시판 여론조작",
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk1"
+      }
+    },
+    "한동훈_이전 직위_대표": {
+      "label": "이전 직위",
+      "source_id": "한동훈",
+      "target_id": "대표",
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk1"
+      }
+    },
+    "의원총회_발생 장소_국민의힘": {
+      "label": "발생 장소",
+      "source_id": "의원총회",
+      "target_id": "국민의힘",
+      "properties": {
+        "title": "“야 인마, 너 나와”…국힘 원외-친한계 ‘반말 의총’ 논란, 파국의 길 걷나",
+        "url": "https://www.mk.co.kr/news/politics/11951999",
+        "pub_date": "Tue, 03 Feb 2026 22:23:39 +09:00",
+        "news_id": "11951999",
+        "category": "정치",
+        "sentiment": "부정",
+        "keywords": "국민의힘, 한동훈, 의원총회, 정성국, 조광한",
+        "triplet_source_id": "11951999-chunk1"
+      }
+    },
+    "구준엽_Member of_클론": {
+      "label": "Member of",
+      "source_id": "구준엽",
+      "target_id": "클론",
+      "properties": {
+        "title": "“故서희원 잊히지 않길”…눈물만 흘리던 구준엽 꺼낸 한 마디",
+        "url": "https://www.mk.co.kr/news/culture/11952002",
+        "pub_date": "Tue, 03 Feb 2026 22:27:22 +09:00",
+        "news_id": "11952002",
+        "category": "연예",
+        "sentiment": "부정",
+        "keywords": "구준엽, 서희원, 급성폐렴, 셀럽병사의 비밀, 재혼",
+        "triplet_source_id": "11952002-chunk0"
+      }
+    },
+    "구준엽_Spouse of_서희원": {
+      "label": "Spouse of",
+      "source_id": "구준엽",
+      "target_id": "서희원",
+      "properties": {
+        "title": "“故서희원 잊히지 않길”…눈물만 흘리던 구준엽 꺼낸 한 마디",
+        "url": "https://www.mk.co.kr/news/culture/11952002",
+        "pub_date": "Tue, 03 Feb 2026 22:27:22 +09:00",
+        "news_id": "11952002",
+        "category": "연예",
+        "sentiment": "부정",
+        "keywords": "구준엽, 서희원, 급성폐렴, 셀럽병사의 비밀, 재혼",
+        "triplet_source_id": "11952002-chunk0"
+      }
+    },
+    "서희원_Died from_급성폐렴": {
+      "label": "Died from",
+      "source_id": "서희원",
+      "target_id": "급성폐렴",
+      "properties": {
+        "title": "“故서희원 잊히지 않길”…눈물만 흘리던 구준엽 꺼낸 한 마디",
+        "url": "https://www.mk.co.kr/news/culture/11952002",
+        "pub_date": "Tue, 03 Feb 2026 22:27:22 +09:00",
+        "news_id": "11952002",
+        "category": "연예",
+        "sentiment": "부정",
+        "keywords": "구준엽, 서희원, 급성폐렴, 셀럽병사의 비밀, 재혼",
+        "triplet_source_id": "11952002-chunk0"
+      }
+    },
+    "서희원_Married_왕소비": {
+      "label": "Married",
+      "source_id": "서희원",
+      "target_id": "왕소비",
+      "properties": {
+        "title": "“故서희원 잊히지 않길”…눈물만 흘리던 구준엽 꺼낸 한 마디",
+        "url": "https://www.mk.co.kr/news/culture/11952002",
+        "pub_date": "Tue, 03 Feb 2026 22:27:22 +09:00",
+        "news_id": "11952002",
+        "category": "연예",
+        "sentiment": "부정",
+        "keywords": "구준엽, 서희원, 급성폐렴, 셀럽병사의 비밀, 재혼",
+        "triplet_source_id": "11952002-chunk0"
+      }
+    },
+    "서희원_Divorced in_2021": {
+      "label": "Divorced in",
+      "source_id": "서희원",
+      "target_id": "2021",
+      "properties": {
+        "title": "“故서희원 잊히지 않길”…눈물만 흘리던 구준엽 꺼낸 한 마디",
+        "url": "https://www.mk.co.kr/news/culture/11952002",
+        "pub_date": "Tue, 03 Feb 2026 22:27:22 +09:00",
+        "news_id": "11952002",
+        "category": "연예",
+        "sentiment": "부정",
+        "keywords": "구준엽, 서희원, 급성폐렴, 셀럽병사의 비밀, 재혼",
+        "triplet_source_id": "11952002-chunk0"
+      }
+    },
+    "서희원_Died in_2025년 2월": {
+      "label": "Died in",
+      "source_id": "서희원",
+      "target_id": "2025년 2월",
+      "properties": {
+        "title": "“故서희원 잊히지 않길”…눈물만 흘리던 구준엽 꺼낸 한 마디",
+        "url": "https://www.mk.co.kr/news/culture/11952002",
+        "pub_date": "Tue, 03 Feb 2026 22:27:22 +09:00",
+        "news_id": "11952002",
+        "category": "연예",
+        "sentiment": "부정",
+        "keywords": "구준엽, 서희원, 급성폐렴, 셀럽병사의 비밀, 재혼",
+        "triplet_source_id": "11952002-chunk0"
+      }
+    },
+    "서희원_Died in_일본": {
+      "label": "Died in",
+      "source_id": "서희원",
+      "target_id": "일본",
+      "properties": {
+        "title": "“故서희원 잊히지 않길”…눈물만 흘리던 구준엽 꺼낸 한 마디",
+        "url": "https://www.mk.co.kr/news/culture/11952002",
+        "pub_date": "Tue, 03 Feb 2026 22:27:22 +09:00",
+        "news_id": "11952002",
+        "category": "연예",
+        "sentiment": "부정",
+        "keywords": "구준엽, 서희원, 급성폐렴, 셀럽병사의 비밀, 재혼",
+        "triplet_source_id": "11952002-chunk0"
+      }
+    },
+    "구준엽_출연_셀럽병사의 비밀": {
+      "label": "출연",
+      "source_id": "구준엽",
+      "target_id": "셀럽병사의 비밀",
+      "properties": {
+        "title": "“故서희원 잊히지 않길”…눈물만 흘리던 구준엽 꺼낸 한 마디",
+        "url": "https://www.mk.co.kr/news/culture/11952002",
+        "pub_date": "Tue, 03 Feb 2026 22:27:22 +09:00",
+        "news_id": "11952002",
+        "category": "연예",
+        "sentiment": "부정",
+        "keywords": "구준엽, 서희원, 급성폐렴, 셀럽병사의 비밀, 재혼",
+        "triplet_source_id": "11952002-chunk1"
+      }
+    },
+    "서희원_사망 원인_급성폐렴": {
+      "label": "사망 원인",
+      "source_id": "서희원",
+      "target_id": "급성폐렴",
+      "properties": {
+        "title": "“故서희원 잊히지 않길”…눈물만 흘리던 구준엽 꺼낸 한 마디",
+        "url": "https://www.mk.co.kr/news/culture/11952002",
+        "pub_date": "Tue, 03 Feb 2026 22:27:22 +09:00",
+        "news_id": "11952002",
+        "category": "연예",
+        "sentiment": "부정",
+        "keywords": "구준엽, 서희원, 급성폐렴, 셀럽병사의 비밀, 재혼",
+        "triplet_source_id": "11952002-chunk1"
+      }
+    },
+    "서희원_사망 장소_일본": {
+      "label": "사망 장소",
+      "source_id": "서희원",
+      "target_id": "일본",
+      "properties": {
+        "title": "“故서희원 잊히지 않길”…눈물만 흘리던 구준엽 꺼낸 한 마디",
+        "url": "https://www.mk.co.kr/news/culture/11952002",
+        "pub_date": "Tue, 03 Feb 2026 22:27:22 +09:00",
+        "news_id": "11952002",
+        "category": "연예",
+        "sentiment": "부정",
+        "keywords": "구준엽, 서희원, 급성폐렴, 셀럽병사의 비밀, 재혼",
+        "triplet_source_id": "11952002-chunk1"
+      }
+    },
+    "서희원_앓았던 질병_심장 승모판 일탈증": {
+      "label": "앓았던 질병",
+      "source_id": "서희원",
+      "target_id": "심장 승모판 일탈증",
+      "properties": {
+        "title": "“故서희원 잊히지 않길”…눈물만 흘리던 구준엽 꺼낸 한 마디",
+        "url": "https://www.mk.co.kr/news/culture/11952002",
+        "pub_date": "Tue, 03 Feb 2026 22:27:22 +09:00",
+        "news_id": "11952002",
+        "category": "연예",
+        "sentiment": "부정",
+        "keywords": "구준엽, 서희원, 급성폐렴, 셀럽병사의 비밀, 재혼",
+        "triplet_source_id": "11952002-chunk1"
+      }
+    },
+    "구준엽_재혼 상대_서희원": {
+      "label": "재혼 상대",
+      "source_id": "구준엽",
+      "target_id": "서희원",
+      "properties": {
+        "title": "“故서희원 잊히지 않길”…눈물만 흘리던 구준엽 꺼낸 한 마디",
+        "url": "https://www.mk.co.kr/news/culture/11952002",
+        "pub_date": "Tue, 03 Feb 2026 22:27:22 +09:00",
+        "news_id": "11952002",
+        "category": "연예",
+        "sentiment": "부정",
+        "keywords": "구준엽, 서희원, 급성폐렴, 셀럽병사의 비밀, 재혼",
+        "triplet_source_id": "11952002-chunk1"
+      }
+    },
+    "구준엽_방문_서희원 묘역": {
+      "label": "방문",
+      "source_id": "구준엽",
+      "target_id": "서희원 묘역",
+      "properties": {
+        "title": "“故서희원 잊히지 않길”…눈물만 흘리던 구준엽 꺼낸 한 마디",
+        "url": "https://www.mk.co.kr/news/culture/11952002",
+        "pub_date": "Tue, 03 Feb 2026 22:27:22 +09:00",
+        "news_id": "11952002",
+        "category": "연예",
+        "sentiment": "부정",
+        "keywords": "구준엽, 서희원, 급성폐렴, 셀럽병사의 비밀, 재혼",
+        "triplet_source_id": "11952002-chunk1"
+      }
+    },
+    "서희원_묘소 위치_대만 금보산": {
+      "label": "묘소 위치",
+      "source_id": "서희원",
+      "target_id": "대만 금보산",
+      "properties": {
+        "title": "“故서희원 잊히지 않길”…눈물만 흘리던 구준엽 꺼낸 한 마디",
+        "url": "https://www.mk.co.kr/news/culture/11952002",
+        "pub_date": "Tue, 03 Feb 2026 22:27:22 +09:00",
+        "news_id": "11952002",
+        "category": "연예",
+        "sentiment": "부정",
+        "keywords": "구준엽, 서희원, 급성폐렴, 셀럽병사의 비밀, 재혼",
+        "triplet_source_id": "11952002-chunk1"
+      }
+    },
+    "구준엽_재회 기간_20여년 만": {
+      "label": "재회 기간",
+      "source_id": "구준엽",
+      "target_id": "20여년 만",
+      "properties": {
+        "title": "“故서희원 잊히지 않길”…눈물만 흘리던 구준엽 꺼낸 한 마디",
+        "url": "https://www.mk.co.kr/news/culture/11952002",
+        "pub_date": "Tue, 03 Feb 2026 22:27:22 +09:00",
+        "news_id": "11952002",
+        "category": "연예",
+        "sentiment": "부정",
+        "keywords": "구준엽, 서희원, 급성폐렴, 셀럽병사의 비밀, 재혼",
+        "triplet_source_id": "11952002-chunk1"
+      }
+    },
+    "서희원_사망 후 경과_1년": {
+      "label": "사망 후 경과",
+      "source_id": "서희원",
+      "target_id": "1년",
+      "properties": {
+        "title": "“故서희원 잊히지 않길”…눈물만 흘리던 구준엽 꺼낸 한 마디",
+        "url": "https://www.mk.co.kr/news/culture/11952002",
+        "pub_date": "Tue, 03 Feb 2026 22:27:22 +09:00",
+        "news_id": "11952002",
+        "category": "연예",
+        "sentiment": "부정",
+        "keywords": "구준엽, 서희원, 급성폐렴, 셀럽병사의 비밀, 재혼",
+        "triplet_source_id": "11952002-chunk1"
+      }
+    },
+    "폐렴_악화 원인_심장 부담 급증": {
+      "label": "악화 원인",
+      "source_id": "폐렴",
+      "target_id": "심장 부담 급증",
+      "properties": {
+        "title": "“故서희원 잊히지 않길”…눈물만 흘리던 구준엽 꺼낸 한 마디",
+        "url": "https://www.mk.co.kr/news/culture/11952002",
+        "pub_date": "Tue, 03 Feb 2026 22:27:22 +09:00",
+        "news_id": "11952002",
+        "category": "연예",
+        "sentiment": "부정",
+        "keywords": "구준엽, 서희원, 급성폐렴, 셀럽병사의 비밀, 재혼",
+        "triplet_source_id": "11952002-chunk1"
+      }
+    },
+    "태백산 눈축제_발생한 사건_노점 위생 논란": {
+      "label": "발생한 사건",
+      "source_id": "태백산 눈축제",
+      "target_id": "노점 위생 논란",
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "triplet_source_id": "11952014-chunk0"
+      }
+    },
+    "태백산 눈축제_개최 회차_제33회": {
+      "label": "개최 회차",
+      "source_id": "태백산 눈축제",
+      "target_id": "제33회",
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "triplet_source_id": "11952014-chunk0"
+      }
+    },
+    "태백산 눈축제_개최 장소_태백산국립공원": {
+      "label": "개최 장소",
+      "source_id": "태백산 눈축제",
+      "target_id": "태백산국립공원",
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "triplet_source_id": "11952014-chunk0"
+      }
+    },
+    "노점 운영자_행위_막걸리병 어묵탕 투입": {
+      "label": "행위",
+      "source_id": "노점 운영자",
+      "target_id": "막걸리병 어묵탕 투입",
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "triplet_source_id": "11952014-chunk0"
+      }
+    },
+    "영상_조회수_수백만 회": {
+      "label": "조회수",
+      "source_id": "영상",
+      "target_id": "수백만 회",
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "triplet_source_id": "11952014-chunk0"
+      }
+    },
+    "태백시_조치_노점 영업중단": {
+      "label": "조치",
+      "source_id": "태백시",
+      "target_id": "노점 영업중단",
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "triplet_source_id": "11952014-chunk0"
+      }
+    },
+    "태백시_조치_시설 철거": {
+      "label": "조치",
+      "source_id": "태백시",
+      "target_id": "시설 철거",
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "triplet_source_id": "11952014-chunk0"
+      }
+    },
+    "태백시_발표_위생 관리 체계 강화": {
+      "label": "발표",
+      "source_id": "태백시",
+      "target_id": "위생 관리 체계 강화",
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "triplet_source_id": "11952014-chunk0"
+      }
+    },
+    "태백시민행동_요구_시장 사과": {
+      "label": "요구",
+      "source_id": "태백시민행동",
+      "target_id": "시장 사과",
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "triplet_source_id": "11952014-chunk0"
+      }
+    },
+    "태백시민행동_요구_축제 운영 구조 개편": {
+      "label": "요구",
+      "source_id": "태백시민행동",
+      "target_id": "축제 운영 구조 개편",
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "triplet_source_id": "11952014-chunk0"
+      }
+    },
+    "태백산 눈축제_발생_노점 위생 논란": {
+      "label": "발생",
+      "source_id": "태백산 눈축제",
+      "target_id": "노점 위생 논란",
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "triplet_source_id": "11952014-chunk1"
+      }
+    },
+    "노점_행위_막걸리병 어묵탕 투입": {
+      "label": "행위",
+      "source_id": "노점",
+      "target_id": "막걸리병 어묵탕 투입",
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "triplet_source_id": "11952014-chunk1"
+      }
+    },
+    "태백시_발표_사과": {
+      "label": "발표",
+      "source_id": "태백시",
+      "target_id": "사과",
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "triplet_source_id": "11952014-chunk1"
+      }
+    },
+    "시민단체_요구_시장 사과": {
+      "label": "요구",
+      "source_id": "시민단체",
+      "target_id": "시장 사과",
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "triplet_source_id": "11952014-chunk1"
+      }
+    },
+    "시민단체_요구_축제 운영 구조 개편": {
+      "label": "요구",
+      "source_id": "시민단체",
+      "target_id": "축제 운영 구조 개편",
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "triplet_source_id": "11952014-chunk1"
+      }
+    },
+    "시민단체_촉구_시민주도 축제위원회 구성": {
+      "label": "촉구",
+      "source_id": "시민단체",
+      "target_id": "시민주도 축제위원회 구성",
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "triplet_source_id": "11952014-chunk1"
+      }
+    },
+    "태백산 눈축제_개최 시작_1월 31일": {
+      "label": "개최 시작",
+      "source_id": "태백산 눈축제",
+      "target_id": "1월 31일",
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "triplet_source_id": "11952014-chunk1"
+      }
+    },
+    "태백산 눈축제_운영_겨울 체험 프로그램": {
+      "label": "운영",
+      "source_id": "태백산 눈축제",
+      "target_id": "겨울 체험 프로그램",
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "triplet_source_id": "11952014-chunk1"
+      }
+    },
+    "눈꽃 등반대회_예정일_2월 7일": {
+      "label": "예정일",
+      "source_id": "눈꽃 등반대회",
+      "target_id": "2월 7일",
+      "properties": {
+        "title": "“펄펄 끓는 어묵탕에 막걸리통 둥둥”…태백 축제 노점 위생 논란",
+        "url": "https://www.mk.co.kr/news/society/11952014",
+        "pub_date": "Tue, 03 Feb 2026 22:42:51 +09:00",
+        "news_id": "11952014",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "태백산 눈축제, 노점 위생 논란, 막걸리병 어묵탕, 영업중단, 시민단체 비판",
+        "triplet_source_id": "11952014-chunk1"
+      }
+    },
+    "이재명 대통령_질책했던 곳_Spc삼립 시화공장": {
+      "label": "질책했던 곳",
+      "source_id": "이재명 대통령",
+      "target_id": "Spc삼립 시화공장",
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "triplet_source_id": "11952015-chunk0"
+      }
+    },
+    "Spc삼립 시화공장_화재 발생_2026년 2월 3일": {
+      "label": "화재 발생",
+      "source_id": "Spc삼립 시화공장",
+      "target_id": "2026년 2월 3일",
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "triplet_source_id": "11952015-chunk0"
+      }
+    },
+    "화재_발생 위치_시흥시 정왕동": {
+      "label": "발생 위치",
+      "source_id": "화재",
+      "target_id": "시흥시 정왕동",
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "triplet_source_id": "11952015-chunk0"
+      }
+    },
+    "화재_부상자 수_3명": {
+      "label": "부상자 수",
+      "source_id": "화재",
+      "target_id": "3명",
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "triplet_source_id": "11952015-chunk0"
+      }
+    },
+    "이재명 대통령_방문 시기_2025년 7월": {
+      "label": "방문 시기",
+      "source_id": "이재명 대통령",
+      "target_id": "2025년 7월",
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "triplet_source_id": "11952015-chunk0"
+      }
+    },
+    "화재_진화 시간_4시간": {
+      "label": "진화 시간",
+      "source_id": "화재",
+      "target_id": "4시간",
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "triplet_source_id": "11952015-chunk0"
+      }
+    },
+    "소방당국_투입 인력_130여명": {
+      "label": "투입 인력",
+      "source_id": "소방당국",
+      "target_id": "130여명",
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "triplet_source_id": "11952015-chunk0"
+      }
+    },
+    "작업자_대피 인원_12명": {
+      "label": "대피 인원",
+      "source_id": "작업자",
+      "target_id": "12명",
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "triplet_source_id": "11952015-chunk0"
+      }
+    },
+    "화재_발생 층_3층 식빵 생산라인": {
+      "label": "발생 층",
+      "source_id": "화재",
+      "target_id": "3층 식빵 생산라인",
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "triplet_source_id": "11952015-chunk0"
+      }
+    },
+    "소방당국_발령_대응 1단계": {
+      "label": "발령",
+      "source_id": "소방당국",
+      "target_id": "대응 1단계",
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "triplet_source_id": "11952015-chunk0"
+      }
+    },
+    "Spc삼립 시화공장_발생_화재": {
+      "label": "발생",
+      "source_id": "Spc삼립 시화공장",
+      "target_id": "화재",
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "triplet_source_id": "11952015-chunk1"
+      }
+    },
+    "이재명 대통령_질책_안전문제": {
+      "label": "질책",
+      "source_id": "이재명 대통령",
+      "target_id": "안전문제",
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "triplet_source_id": "11952015-chunk1"
+      }
+    },
+    "화재_발생 장소_Spc삼립 시화공장": {
+      "label": "발생 장소",
+      "source_id": "화재",
+      "target_id": "Spc삼립 시화공장",
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "triplet_source_id": "11952015-chunk1"
+      }
+    },
+    "작업자 3명_피해_부상": {
+      "label": "피해",
+      "source_id": "작업자 3명",
+      "target_id": "부상",
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "triplet_source_id": "11952015-chunk1"
+      }
+    },
+    "50대 근로자_사망_기계 사고": {
+      "label": "사망",
+      "source_id": "50대 근로자",
+      "target_id": "기계 사고",
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "triplet_source_id": "11952015-chunk1"
+      }
+    },
+    "이재명 대통령_방문_Spc삼립 시화공장": {
+      "label": "방문",
+      "source_id": "이재명 대통령",
+      "target_id": "Spc삼립 시화공장",
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "triplet_source_id": "11952015-chunk1"
+      }
+    },
+    "경찰_조사_화재 원인": {
+      "label": "조사",
+      "source_id": "경찰",
+      "target_id": "화재 원인",
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "triplet_source_id": "11952015-chunk1"
+      }
+    },
+    "소방당국_조사_화재 원인": {
+      "label": "조사",
+      "source_id": "소방당국",
+      "target_id": "화재 원인",
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "triplet_source_id": "11952015-chunk1"
+      }
+    },
+    "근로자_진술_폭발음": {
+      "label": "진술",
+      "source_id": "근로자",
+      "target_id": "폭발음",
+      "properties": {
+        "title": "이재명 대통령이 ‘안전문제’ 질책했던 곳이네…SPC삼립 시화공장서 화재",
+        "url": "https://www.mk.co.kr/news/society/11952015",
+        "pub_date": "Tue, 03 Feb 2026 22:45:24 +09:00",
+        "news_id": "11952015",
+        "category": "사회",
+        "sentiment": "부정",
+        "keywords": "SPC삼립, 시화공장 화재, 안전사고, 이재명 대통령, 작업자 부상",
+        "triplet_source_id": "11952015-chunk1"
+      }
+    }
+  },
+  "triplets": [
+    [
+      "정성국",
+      "직위는",
+      "의원"
+    ],
+    [
+      "조경태",
+      "소속은",
+      "찬탄파"
+    ],
+    [
+      "태백시",
+      "발표",
+      "위생 관리 체계 강화"
+    ],
+    [
+      "화재",
+      "발생 층",
+      "3층 식빵 생산라인"
+    ],
+    [
+      "시민단체",
+      "요구",
+      "축제 운영 구조 개편"
+    ],
+    [
+      "구준엽",
+      "Member of",
+      "클론"
+    ],
+    [
+      "서희원",
+      "앓았던 질병",
+      "심장 승모판 일탈증"
+    ],
+    [
+      "근로자",
+      "진술",
+      "폭발음"
+    ],
+    [
+      "태백시",
+      "조치",
+      "노점 영업중단"
+    ],
+    [
+      "토지보상법",
+      "계류 중",
+      "국회 국토위"
+    ],
+    [
+      "소방당국",
+      "발령",
+      "대응 1단계"
+    ],
+    [
+      "임이자",
+      "주장",
+      "당원게시판 여론조작"
+    ],
+    [
+      "태백시",
+      "발표",
+      "사과"
+    ],
+    [
+      "태백시민행동",
+      "요구",
+      "시장 사과"
+    ],
+    [
+      "국회 입법",
+      "상태",
+      "지연"
+    ],
+    [
+      "서희원",
+      "묘소 위치",
+      "대만 금보산"
+    ],
+    [
+      "태백산 눈축제",
+      "운영",
+      "겨울 체험 프로그램"
+    ],
+    [
+      "구준엽",
+      "재혼 상대",
+      "서희원"
+    ],
+    [
+      "노점 운영자",
+      "행위",
+      "막걸리병 어묵탕 투입"
+    ],
+    [
+      "태백산 눈축제",
+      "개최 시작",
+      "1월 31일"
+    ],
+    [
+      "국민의힘",
+      "상태는",
+      "심리적 분당"
+    ],
+    [
+      "시민단체",
+      "요구",
+      "시장 사과"
+    ],
+    [
+      "구준엽",
+      "방문",
+      "서희원 묘역"
+    ],
+    [
+      "이재명 대통령",
+      "방문",
+      "Spc삼립 시화공장"
+    ],
+    [
+      "조광한",
+      "직위는",
+      "최고위원"
+    ],
+    [
+      "폐렴",
+      "악화 원인",
+      "심장 부담 급증"
+    ],
+    [
+      "원외 당협위원장 78명",
+      "참여했다",
+      "규탄 성명"
+    ],
+    [
+      "서희원",
+      "사망 장소",
+      "일본"
+    ],
+    [
+      "이재명",
+      "Is",
+      "대통령"
+    ],
+    [
+      "화재",
+      "부상자 수",
+      "3명"
+    ],
+    [
+      "당권파",
+      "대립하고 있다",
+      "친한계"
+    ],
+    [
+      "1·29 대책",
+      "발표일",
+      "2026년 1월 29일"
+    ],
+    [
+      "소방당국",
+      "조사",
+      "화재 원인"
+    ],
+    [
+      "이재명 대통령",
+      "질책했던 곳",
+      "Spc삼립 시화공장"
+    ],
+    [
+      "정부",
+      "발표",
+      "1·29 공급대책"
+    ],
+    [
+      "국민의힘",
+      "주장",
+      "재건축초과이익 환수제도 폐지"
+    ],
+    [
+      "작업자 3명",
+      "피해",
+      "부상"
+    ],
+    [
+      "태백산 눈축제",
+      "발생한 사건",
+      "노점 위생 논란"
+    ],
+    [
+      "정부·여당",
+      "제안",
+      "용적률 1.3배 허용"
+    ],
+    [
+      "서희원",
+      "Married",
+      "왕소비"
+    ],
+    [
+      "화재",
+      "진화 시간",
+      "4시간"
+    ],
+    [
+      "9·7 대책",
+      "포함",
+      "정비사업 인허가 간소화"
+    ],
+    [
+      "구준엽",
+      "Spouse of",
+      "서희원"
+    ],
+    [
+      "국민의힘",
+      "경험하고 있다",
+      "당내 분열"
+    ],
+    [
+      "한동훈",
+      "직위",
+      "전 대표"
+    ],
+    [
+      "임이자",
+      "가까운 관계",
+      "장 대표"
+    ],
+    [
+      "태백산 눈축제",
+      "발생",
+      "노점 위생 논란"
+    ],
+    [
+      "서희원",
+      "Died in",
+      "일본"
+    ],
+    [
+      "국민의힘",
+      "주장",
+      "용적률 1.2배 완화"
+    ],
+    [
+      "조광한",
+      "직위",
+      "최고위원"
+    ],
+    [
+      "한동훈",
+      "이전 직위",
+      "대표"
+    ],
+    [
+      "화재",
+      "발생 장소",
+      "Spc삼립 시화공장"
+    ],
+    [
+      "정성국",
+      "직위",
+      "의원"
+    ],
+    [
+      "정성국",
+      "발언했다",
+      "의원총회"
+    ],
+    [
+      "작업자",
+      "대피 인원",
+      "12명"
+    ],
+    [
+      "서희원",
+      "Died in",
+      "2025년 2월"
+    ],
+    [
+      "Spc삼립 시화공장",
+      "발생",
+      "화재"
+    ],
+    [
+      "영상",
+      "조회수",
+      "수백만 회"
+    ],
+    [
+      "공공주택특별법",
+      "계류 중",
+      "국회 국토위"
+    ],
+    [
+      "9·7 대책",
+      "포함",
+      "용적률 상향"
+    ],
+    [
+      "소방당국",
+      "투입 인력",
+      "130여명"
+    ],
+    [
+      "정성국",
+      "논란 관련",
+      "조광한"
+    ],
+    [
+      "50대 근로자",
+      "사망",
+      "기계 사고"
+    ],
+    [
+      "Spc삼립 시화공장",
+      "화재 발생",
+      "2026년 2월 3일"
+    ],
+    [
+      "노점",
+      "행위",
+      "막걸리병 어묵탕 투입"
+    ],
+    [
+      "조광한",
+      "지명자",
+      "장동혁"
+    ],
+    [
+      "태백산 눈축제",
+      "개최 회차",
+      "제33회"
+    ],
+    [
+      "구준엽",
+      "출연",
+      "셀럽병사의 비밀"
+    ],
+    [
+      "재개발 조합 설립 동의율",
+      "조정 to",
+      "70%"
+    ],
+    [
+      "태백산 눈축제",
+      "개최 장소",
+      "태백산국립공원"
+    ],
+    [
+      "서울 아파트 매매가격",
+      "상승",
+      "0.31%"
+    ],
+    [
+      "서희원",
+      "Died from",
+      "급성폐렴"
+    ],
+    [
+      "시민단체",
+      "촉구",
+      "시민주도 축제위원회 구성"
+    ],
+    [
+      "노후청사특별법",
+      "추진 주체",
+      "정부"
+    ],
+    [
+      "의원총회",
+      "발생 날짜",
+      "전날"
+    ],
+    [
+      "서희원",
+      "Divorced in",
+      "2021"
+    ],
+    [
+      "조경태",
+      "주장",
+      "한동훈 제명 재고"
+    ],
+    [
+      "눈꽃 등반대회",
+      "예정일",
+      "2월 7일"
+    ],
+    [
+      "서희원",
+      "사망 후 경과",
+      "1년"
+    ],
+    [
+      "원외 당협위원장협의회",
+      "촉구했다",
+      "정성국 의원직 사퇴"
+    ],
+    [
+      "야당",
+      "요구",
+      "민간 정비사업 혜택"
+    ],
+    [
+      "서희원",
+      "사망 원인",
+      "급성폐렴"
+    ],
+    [
+      "화재",
+      "발생 위치",
+      "시흥시 정왕동"
+    ],
+    [
+      "경찰",
+      "조사",
+      "화재 원인"
+    ],
+    [
+      "의원총회",
+      "발생 장소",
+      "국민의힘"
+    ],
+    [
+      "재개발 조합 설립 동의율",
+      "조정 from",
+      "75%"
+    ],
+    [
+      "태백시",
+      "조치",
+      "시설 철거"
+    ],
+    [
+      "이재명 대통령",
+      "언급",
+      "부동산 이슈"
+    ],
+    [
+      "태백시민행동",
+      "요구",
+      "축제 운영 구조 개편"
+    ],
+    [
+      "이재명 대통령",
+      "방문 시기",
+      "2025년 7월"
+    ],
+    [
+      "국토위 법안소위",
+      "휴업 시작",
+      "2025년 12월"
+    ],
+    [
+      "국토교통위원회 국토법안심사소위",
+      "마지막 회의",
+      "2025년 12월 9일"
+    ],
+    [
+      "이재명 대통령",
+      "질책",
+      "안전문제"
+    ],
+    [
+      "구준엽",
+      "재회 기간",
+      "20여년 만"
+    ]
+  ],
+  "_stripped": {
+    "removed_fields": [
+      "nodes[label=text_chunk].text",
+      "nodes[label=text_chunk].embedding",
+      "nodes[label=text_chunk].properties._node_content",
+      "nodes[*].properties.summary",
+      "relations[*].properties.summary"
+    ],
+    "original_size_bytes": 500111,
+    "stripped_at": "2026-08-02T19:36:01.895962",
+    "script": "scripts/strip_graph.py"
+  }
+}
