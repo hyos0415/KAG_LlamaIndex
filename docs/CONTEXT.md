@@ -53,16 +53,22 @@
       docs/cluster-review.md 생성(84개 클러스터 전체) → 범위를 교차 문서 쌍으로 축소
       (같은 문서 내 쌍은 조각화 해소에 기여 안 함, 제외) → 교차 문서 쌍 1,743개 중
       직접 substring 193개 / 전이 1,550개, 100쌍 초과로 직접 193개만 1차 수록,
-      전이는 보류 → 발견 17(긴 서술구가 가짜 다리를 만듦 — §4 소거법 마지막 칸) 추가 —
-      수작업 판정 대기 중
+      전이는 보류 → 발견 17(긴 서술구가 가짜 다리를 만듦 — §4 소거법 마지막 칸) 추가 →
+      193개 전수 판정 전 표본 기반 중지 규칙 사전 등록(`393d5b2`) →
+      고정 시드(42)로 40개 표본 추출(`docs/cluster-review-sample40.md`) →
+      scripts/normalize.py에 --pairs-file 옵션 구현(전이 클러스터링 없이 판정된 쌍만 병합) —
+      드라이런 스모크 테스트만, 실제 판정 결과 미적용 →
+      docs/design-review.md 골격 작성(엔티티 정규화 절만 비워둠) —
+      40개 표본 수작업 판정 대기 중
 
-남은 미정: 없음 (§8 전체 확정). 직접 substring 교차문서 쌍 193개 판정은 사람이 한다(docs/cluster-review.md).
+남은 미정: 없음 (§8 전체 확정). 40개 표본 판정은 사람이 한다(docs/cluster-review-sample40.md).
 
 **다음 작업 순서**:
-① docs/cluster-review.md 직접 substring 쌍 193개 수작업 판정 (동일 대상/다른 대상)
-② 판정 결과로 실제 안전한 별칭 세트 확정 → 그 세트로 재측정
-③ `docs/design-review.md` 작성 (§4 소거법 표 + 발견 16의 사전 등록 정정 이력이 뼈대)
-④ README 정직화
+① `docs/cluster-review-sample40.md` 40개 표본 수작업 판정 (동일 대상/다른 대상)
+② 판정된 쌍만 병합 → leverage 실측 → 외삽 → §6 중지 규칙(<20%/20~50%/>50%) 적용
+③ < 20%면 전수 판정 생략하고 가설 B 기각 확정. 그 외엔 193개 전수 판정 진행
+④ `docs/design-review.md` §4·§7 확정 (엔티티 정규화 결과 채움)
+⑤ README 정직화
 ```
 
 ---
@@ -649,9 +655,10 @@ Is · Died in · Died from · Member of · Spouse of · Married · Divorced in
 - `tests/fixtures/baseline_v2a-lo.json` / `v2a-hi.json` / `v2b.json` / `v2c.json` — v2 4변형 지표(전체40 + 증권12/사회10)
 - `tests/fixtures/v2a_hi_bridge_analysis.json` — v2a-hi 판정 무효화 근거(v1 고립 10건의 브릿지 클러스터, 크기 분포)
 - `docs/cluster-review.md` — 교차 문서 쌍 검토 시트(직접 substring 193개 1차 수록, 전이 1,550개 보류, 판정란 공란 — 사람이 채움)
+- `docs/cluster-review-sample40.md` — 193개 중 고정 시드(42)로 뽑은 40개 표본, 문서 제목 포함, 판정란 공란
+- `docs/design-review.md` — 최종 진단 문서 골격 (엔티티 정규화 절만 비워둠, 표본 판정 후 확정)
 
 **작성 예정**:
-- `docs/design-review.md` — 최종 진단 문서
 - `docs/found-issues.md` — 범위 밖 발견 사항
 
 `design-review.md`에는 §5의 설계 반복 기록을 반드시 포함하세요. 실험 결과와 별개로 보여줄 것이 있습니다.

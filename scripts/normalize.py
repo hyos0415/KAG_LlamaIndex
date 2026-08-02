@@ -284,15 +284,62 @@ def dry_run_report(graph_path, mode="lo", max_cluster_size=5):
     return report
 
 
+def load_judged_pairs_alias_map(pairs_file):
+    """사람이 판정한 쌍 목록을 읽어 '동일 대상'만 병합하는 alias map을 만든다.
+    전이적 클러스터링을 쓰지 않는다 — 판정된 쌍끼리만 직접 연결(짧은 쪽을 canonical로).
+    판정 파일 형식: [{"a": "...", "b": "...", "judgment": "동일 대상"|"다른 대상"}, ...]
+    """
+    with open(pairs_file, encoding="utf-8") as f:
+        judged = json.load(f)
+
+    valid_pairs = [p for p in judged if p.get("judgment") == "동일 대상"]
+    alias = {}
+    for p in valid_pairs:
+        a, b = p["a"], p["b"]
+        short, long_ = (a, b) if len(a) <= len(b) else (b, a)
+        alias[long_] = short
+    return alias, len(judged), len(valid_pairs)
+
+
+def dry_run_report_from_pairs_file(graph_path, pairs_file):
+    entities, rel_types = load_graph(graph_path)
+    total_entities = len(set(entities))
+
+    alias, total_judged, valid_count = load_judged_pairs_alias_map(pairs_file)
+    absorbed = set(alias.keys())
+    canonical = set(alias.values())
+
+    report = {
+        "graph_path": graph_path,
+        "pairs_file": pairs_file,
+        "entity_v2a_judged": {
+            "mode": "judged_pairs",
+            "total_entities": total_entities,
+            "total_pairs_in_file": total_judged,
+            "valid_pairs": valid_count,
+            "canonical_short_forms": len(canonical),
+            "absorbed_long_forms": len(absorbed),
+            "expected_reduction": len(absorbed),
+            "expected_reduction_pct_of_total": round(len(absorbed) / total_entities * 100, 2) if total_entities else 0,
+            "note": "전이적 클러스터링 미사용 — 판정된 쌍만 직접 병합. 드라이런만, 그래프 재구축은 하지 않음.",
+        },
+    }
+    return report
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--graph", required=True, help="property_graph_store.json 경로")
     parser.add_argument("--mode", choices=["lo", "hi", "mid"], default="lo", help="lo=보수 규칙(하한), hi=substring 전이적 클러스터링(상한, 의도적 과다병합), mid=전이적 클러스터링+크기 상한(사후 설계, 아직 미실행)")
     parser.add_argument("--max-cluster-size", type=int, default=5, help="mid 모드 전용 클러스터 크기 상한 (기본 5, 클러스터 분포를 보고 조정 가능)")
+    parser.add_argument("--pairs-file", default=None, help="사람이 판정한 쌍 목록(JSON). 지정 시 --mode 무시하고 판정된 '동일 대상' 쌍만 직접 병합(전이 클러스터링 없음)")
     parser.add_argument("--dry-run", action="store_true", default=True, help="기본값. 실제 그래프를 만들지 않고 예상 건수만 출력")
     args = parser.parse_args()
 
-    report = dry_run_report(args.graph, mode=args.mode, max_cluster_size=args.max_cluster_size)
+    if args.pairs_file:
+        report = dry_run_report_from_pairs_file(args.graph, args.pairs_file)
+    else:
+        report = dry_run_report(args.graph, mode=args.mode, max_cluster_size=args.max_cluster_size)
     print(json.dumps(report, ensure_ascii=False, indent=2))
 
 
