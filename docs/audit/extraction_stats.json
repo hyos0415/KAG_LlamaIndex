@@ -1,0 +1,435 @@
+{
+  "experiments/v0prime/graph_public.json": {
+    "source": "experiments/v0prime/graph_public.json",
+    "counts": {
+      "entity_nodes": 118,
+      "text_chunk_nodes": 10,
+      "relations": 94,
+      "triplets": 94,
+      "distinct_relation_labels": 73
+    },
+    "node_space_pollution": {
+      "literal_entity_nodes": 17,
+      "literal_ratio": 0.1441,
+      "by_kind": {
+        "date_or_time": 9,
+        "percent": 3,
+        "pure_number": 1,
+        "money_or_measure": 2,
+        "count_with_unit": 2
+      },
+      "examples": [
+        "2025년 12월 9일",
+        "0.31%",
+        "2025년 12월",
+        "75%",
+        "70%",
+        "2026년 1월 29일",
+        "2021",
+        "2025년 2월",
+        "1년",
+        "1월 31일",
+        "2월 7일",
+        "2026년 2월 3일",
+        "3명",
+        "2025년 7월",
+        "4시간",
+        "130여명",
+        "12명"
+      ]
+    },
+    "entity_name_shape": {
+      "mean_len": 5.89,
+      "max_len": 16,
+      "len_ge_10_count": 23,
+      "len_ge_10_ratio": 0.1949,
+      "multiword_count": 62,
+      "multiword_ratio": 0.5254,
+      "longest_examples": [
+        "국토교통위원회 국토법안심사소위",
+        "재건축초과이익 환수제도 폐지",
+        "재개발 조합 설립 동의율",
+        "시민주도 축제위원회 구성",
+        "2025년 12월 9일",
+        "정비사업 인허가 간소화",
+        "2026년 1월 29일",
+        "원외 당협위원장 78명",
+        "용적률 1.3배 허용",
+        "용적률 1.2배 완화",
+        "서울 아파트 매매가격",
+        "원외 당협위원장협의회",
+        "막걸리병 어묵탕 투입",
+        "위생 관리 체계 강화",
+        "축제 운영 구조 개편"
+      ]
+    },
+    "relation_labels": {
+      "distinct": 73,
+      "type_ratio": 0.7766,
+      "hapax_count": 59,
+      "hapax_ratio": 0.8082,
+      "english_label_count": 7,
+      "english_labels": [
+        "Died from",
+        "Died in",
+        "Divorced in",
+        "Is",
+        "Married",
+        "Member of",
+        "Spouse of"
+      ],
+      "top20": [
+        [
+          "요구",
+          5
+        ],
+        [
+          "주장",
+          4
+        ],
+        [
+          "발표",
+          3
+        ],
+        [
+          "직위",
+          3
+        ],
+        [
+          "포함",
+          2
+        ],
+        [
+          "계류 중",
+          2
+        ],
+        [
+          "직위는",
+          2
+        ],
+        [
+          "발생 장소",
+          2
+        ],
+        [
+          "Died in",
+          2
+        ],
+        [
+          "방문",
+          2
+        ],
+        [
+          "행위",
+          2
+        ],
+        [
+          "조치",
+          2
+        ],
+        [
+          "발생",
+          2
+        ],
+        [
+          "조사",
+          2
+        ],
+        [
+          "Is",
+          1
+        ],
+        [
+          "언급",
+          1
+        ],
+        [
+          "마지막 회의",
+          1
+        ],
+        [
+          "제안",
+          1
+        ],
+        [
+          "상승",
+          1
+        ],
+        [
+          "상태",
+          1
+        ]
+      ],
+      "top20_coverage": 0.4362
+    },
+    "triple_shape": {
+      "object_is_literal": 17,
+      "object_is_literal_ratio": 0.1809,
+      "subject_is_literal": 0,
+      "subject_is_literal_ratio": 0.0,
+      "both_sides_entity": 77,
+      "both_sides_entity_ratio": 0.8191
+    },
+    "provenance": {
+      "relations_with_triplet_source_id": 94,
+      "relations_with_news_id": 94,
+      "coverage_ratio": 1.0,
+      "granularity": "chunk",
+      "relation_property_keys": [
+        "category",
+        "keywords",
+        "news_id",
+        "pub_date",
+        "sentiment",
+        "title",
+        "triplet_source_id",
+        "url"
+      ]
+    }
+  },
+  "experiments/v1/graph_public.json": {
+    "source": "experiments/v1/graph_public.json",
+    "counts": {
+      "entity_nodes": 925,
+      "text_chunk_nodes": 86,
+      "relations": 773,
+      "triplets": 773,
+      "distinct_relation_labels": 460
+    },
+    "node_space_pollution": {
+      "literal_entity_nodes": 152,
+      "literal_ratio": 0.1643,
+      "by_kind": {
+        "percent": 29,
+        "pure_number": 14,
+        "money_or_measure": 47,
+        "count_with_unit": 18,
+        "date_or_time": 43,
+        "year_month_day": 1
+      },
+      "examples": [
+        "7.09%",
+        "1064.41",
+        "4311억원",
+        "18%",
+        "25.97%",
+        "22.95%",
+        "5000선",
+        "103.29배",
+        "2.27배",
+        "1천만원",
+        "3월 31일",
+        "400만원",
+        "1.6배",
+        "2월 12일",
+        "1%",
+        "2026년",
+        "2024년",
+        "1376조원",
+        "25.3%",
+        "17.2%",
+        "71.2%",
+        "53.8%",
+        "100조",
+        "2026년 1월 28일",
+        "4만명",
+        "2026년 6월",
+        "2026",
+        "1974",
+        "77개",
+        "2024년 12월",
+        "2025 3분기",
+        "30년",
+        "225억달러",
+        "2023년 11월",
+        "4%",
+        "1600억원",
+        "2022년 1월",
+        "1621억원",
+        "87",
+        "2월 5일"
+      ]
+    },
+    "entity_name_shape": {
+      "mean_len": 6.79,
+      "max_len": 32,
+      "len_ge_10_count": 185,
+      "len_ge_10_ratio": 0.2,
+      "multiword_count": 483,
+      "multiword_ratio": 0.5222,
+      "longest_examples": [
+        "경기도 여성청소년 생리용품 지원에 관한 조례 일부개정조례안",
+        "경기도교육청 교육복지 운영·지원에 관한 조례 일부개정조례안",
+        "Kb로 국내주식 옮기고 거래하면 쿠폰이 와르르",
+        "2026년 9월 10일∼2027년 1월 10일",
+        "비대면 또는 은행연계 계좌 보유 개인고객",
+        "사랑의열매 사회복지공동모금 제12대 회장",
+        "다주택자 양도소득세 중과 유예 종료 방침",
+        "양도세 중과 대상 전용 신고·상담 창구",
+        "하나 모두 성장 k미래전략산업 벤처펀드",
+        "2021년 5월 to 2022년 3월",
+        "다주택자 양도세 중과 유예 종료 방침",
+        "5000억달러 이상 미국산 제품 구매",
+        "여성청소년 생리용품 보편 지원 사업",
+        "Ai·로봇 첨단 기술 분야 급성장",
+        "순입고 금액 100만원당 2천원"
+      ]
+    },
+    "relation_labels": {
+      "distinct": 460,
+      "type_ratio": 0.5951,
+      "hapax_count": 326,
+      "hapax_ratio": 0.7087,
+      "english_label_count": 83,
+      "english_labels": [
+        "Acquitted of",
+        "Added to portfolio",
+        "Advocates for",
+        "Age",
+        "Aims for",
+        "Aims to eliminate",
+        "Also known as",
+        "Amends",
+        "Attempted acquisition of",
+        "Category",
+        "Caused damage to",
+        "Causes",
+        "Causes harm to",
+        "Ceo of",
+        "Charged with",
+        "Composed of",
+        "Consists of",
+        "Criticized",
+        "Delisted from",
+        "Described as",
+        "Developed",
+        "Died from",
+        "Died in",
+        "Differs from",
+        "Disseminated",
+        "Divorced in",
+        "Enterprise value",
+        "Established",
+        "Fine amount",
+        "Former chairman of",
+        "Founded",
+        "Founded by",
+        "Has advantage in",
+        "Has enterprise value",
+        "Has sentiment",
+        "Held at",
+        "Held on",
+        "Holds stake in",
+        "Illegal profit amount",
+        "Implement"
+      ],
+      "top20": [
+        [
+          "Is",
+          39
+        ],
+        [
+          "기록",
+          16
+        ],
+        [
+          "직책",
+          12
+        ],
+        [
+          "발표",
+          9
+        ],
+        [
+          "추진",
+          8
+        ],
+        [
+          "소속",
+          7
+        ],
+        [
+          "상승",
+          7
+        ],
+        [
+          "증가",
+          7
+        ],
+        [
+          "포함",
+          7
+        ],
+        [
+          "순매수",
+          6
+        ],
+        [
+          "감소",
+          6
+        ],
+        [
+          "상승률",
+          6
+        ],
+        [
+          "신설",
+          5
+        ],
+        [
+          "개최 장소",
+          5
+        ],
+        [
+          "요구",
+          5
+        ],
+        [
+          "실시",
+          4
+        ],
+        [
+          "개최일",
+          4
+        ],
+        [
+          "증가율",
+          4
+        ],
+        [
+          "강조",
+          4
+        ],
+        [
+          "Invested in",
+          4
+        ]
+      ],
+      "top20_coverage": 0.2135
+    },
+    "triple_shape": {
+      "object_is_literal": 183,
+      "object_is_literal_ratio": 0.2367,
+      "subject_is_literal": 5,
+      "subject_is_literal_ratio": 0.0065,
+      "both_sides_entity": 588,
+      "both_sides_entity_ratio": 0.7607
+    },
+    "provenance": {
+      "relations_with_triplet_source_id": 773,
+      "relations_with_news_id": 773,
+      "coverage_ratio": 1.0,
+      "granularity": "chunk",
+      "relation_property_keys": [
+        "category",
+        "keywords",
+        "news_id",
+        "pub_date",
+        "sentiment",
+        "title",
+        "triplet_source_id",
+        "url"
+      ]
+    }
+  }
+}
